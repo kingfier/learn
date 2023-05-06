@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: brown;
+
+    @media (max-width: 1280px) {
+       //
+    }
+
+    &__logo {
+        background-color: brown;
+    }
+    
+}
+
+/*
+
+1280 > ...
+1024 - 1280
+768 - 1024
+320 - 768
+
+*/

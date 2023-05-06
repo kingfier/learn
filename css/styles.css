@@ -1,0 +1,22 @@
+/* * {
+    background-color: gray;
+
+} */
+
+:root {
+    --bg: brown;
+    
+}
+
+.header {
+    background-color: var(--bg);
+}
+
+footer {
+    background-color: black;
+    
+}
+ul {
+    background-color: aqua;
+
+}

@@ -1,0 +1,15 @@
+.navigation {
+    &__list {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+    &__link {
+        font-size: 16px;
+    }
+    &__item {
+        text-align: right;
+        display: inline;
+    }
+}

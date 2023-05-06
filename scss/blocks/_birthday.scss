@@ -1,0 +1,13 @@
+.card {
+    display:flex;
+    &__img {
+        
+        width: 10px;
+    }
+}
+.birthday {
+    &__list {
+        list-style-type: none;
+        padding: 0%;
+    }    
+}

@@ -1,0 +1,84 @@
+body {
+  background-color: #f3e5ab;
+  margin: 0;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer{
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.hero__title {
+  text-align: center;
+  font-size: 16px;
+}
+
+.card {
+  display: flex;
+}
+.card__img {
+  width: 10px;
+}
+
+.birthday__list {
+  list-style-type: none;
+  padding: 0%;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: brown;
+}
+.header__logo {
+  background-color: brown;
+}
+
+/*
+
+1280 > ...
+1024 - 1280
+768 - 1024
+320 - 768
+
+*/
+.logo {
+  display: block;
+  width: 100px;
+}
+.logo:hover .logo__img {
+  fill: red;
+}
+.logo__img {
+  width: 100%;
+  transition: fill 150ms ease-in;
+  pointer-events: none;
+}
+
+.navigation__list {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+.navigation__link {
+  font-size: 16px;
+}
+.navigation__item {
+  text-align: right;
+  display: inline;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+.logo {
+    $parent: &;
+
+    display: block;
+    width: 100px;
+   
+    &:hover {
+        
+        #{$parent} {
+            &__img {
+                fill: red
+            }
+
+            
+        }
+    }
+
+    &__img {
+        width: 100%;
+        transition: fill 150ms ease-in;
+        pointer-events: none;
+    }
+}
