@@ -1,6 +1,6 @@
 body {
-  background-color: aqua;
+  background-color: rgb(27, 30, 202);
 }
 body img {
-  display: none;
+  display: flex;
 }/*# sourceMappingURL=index.css.map */

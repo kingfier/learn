@@ -10,253 +10,172 @@
 </head>
 
 <body>
-    <div class="page container">
-        <header class="header container">
-            <div class="header__logo">
-                <a href="/" class="logo" title="30 seconds of code">
-                    <img src="./img/logo.png" alt="Home">
-                </a>
-            </div>
+    <header class="header">
+        <div class="header__logo">
+            <a href="/" class="logo__link" title="30 seconds of code">
+                <img src="./img/logo.png" alt="Home" class="logo">
+            </a>
+        </div>
 
-            
-            <div class="label-search">
-                <div></div>
-                <input aria-label="Search snippets and collections" class="box-border search-box" placeholder="Search"
-                    type="search">
-            </div>
-        </header>
 
-        <main class="main">
-            <div class="center mainframe">
-                <div class="mainframe__picture">
-                    <picture>
-                        <source srcset=/assets/splash/work-sunrise.webp type=image/webp>
-                        <img alt="" class="pic" height=240 src=/assets/splash/work-sunrise.png width=240
-                            fetchpriority=high>
-                    </picture>
-                </div>
-                <div class="mainframe__text">
-                    <h2 class="h2 main__title">Discover short code
-                        snippets for all your development needs.</h2>
-                    <p class="p main__p">Browse snippets by collection or
-                        check out our top picks and latest articles below.</p>
-                </div>
-            </div>
+        <div class="search">
+            <input aria-label="Search snippets and collections" class="search__frame" placeholder="Search"
+                type="search">
+        </div>
+    </header>
 
-            <ul class="boxframe__list">
-                <li class="boxframe__item">
-                    <a href=/js/p/1 class="boxframe__link">JavaScript</a>
+    <main class="main">
+        <div class="main__card">
+            <div class="card__picture">
+                <img alt="pic1" src=./img/work-sunrise.png>
+            </div>
+            <div class="card__words">
+                <h2 class="h2 card__title">Discover short code
+                    snippets for all your development needs.</h2>
+                <p class="p card__text">Browse snippets by collection or
+                    check out our top picks and latest articles below.</p>
+            </div>
+        </div>
+
+        <ul class="central__list">
+            <li class="central__item">
+                <a href=/ class="central__link">JavaScript</a>
+            </li>
+            <li class="central__item">
+                <a href=/ class="central__link">CSS</a>
+            </li>
+            <li class="central__item">
+                <a href=/ class="central__link">React Hooks</a>
+            </li>
+            <li class="central__item">
+                <a href=/ class="central__link">JavaScript Algorithms</a>
+            </li>
+            <li class="central__item">
+                <a href=/ class="central__link">Git</a>
+            </li>
+            <li class="central__item">
+                <a href=/ class="central__link">JavaScript Interview Questions</a>
+            </li>
+            <li class="central__item">
+                <a href=/ class="central__link">Python</a>
+            </li>
+            <li class="central__item">
+                <a href=/ class="central__link">Node.js</a>
+            </li>
+            <li class="central__item">
+                <a href=/ class="central__link">More collections</a>
+            </li>
+        </ul>
+
+        <div class="under">
+            <h2 class="lineframe__alt">New &amp; Popular Snippets</h2>
+            <ul class=lineframe__list>
+                <li class="lineframe__item">
+                    <img alt="" class="pic" height=144 src=./img/work-sunrise.png width=144 loading=lazy>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">Introduction to the Node.js test module</a>
+                        </h3>
+                        <p class="lineframe__regulartext">The Node.js test module is a new testing tool that's still in its early stages. Learn more about it in this short introduction.</p>
+                        <p class="lineframe__commenttext">JavaScript, Node · <span class=inline-block>Apr 30, 2023</span></p>
+                    </div>
                 </li>
-                <li class="boxframe__item">
-                    <a href=/css/p/1 class="boxframe__link">CSS</a>
+                <li class="lineframe__item">
+                    <img alt="" class="pic" src=./img/work-sunrise.png>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">Typechecking objects with Proxy in JavaScript</a>
+                        </h3>
+                        <p class="lineframe__regulartext">A simple way to typecheck objects at runtime using the Proxy object.</p>
+                        <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr 23, 2023</span></p>
+                    </div>
                 </li>
-                <li class="boxframe__item">
-                    <a href=/react/t/hooks/p/1 class="boxframe__link">React Hooks</a>
+                <li class="lineframe__item">
+                    <img alt="" class="pic" src=./img/work-sunrise.png>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">Tip: You can't extend the Proxy object</a>
+                        </h3>
+                        <p class="lineframe__regulartext">Turns out the Proxy object is not extensible, but there's a way around its limitations.</p>
+                        <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr 17, 2023</span></p>
+                    </div>
                 </li>
-                <li class="boxframe__item">
-                    <a href=/js/t/algorithm/p/1 class="boxframe__link">JavaScript Algorithms</a>
+                <li class="lineframe__item">
+                    <img alt="" class="pic" src=./img/work-sunrise.png>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">Can I create dynamic setters and getters in JavaScript?</a>
+                        </h3>
+                        <p class="lineframe__regulartext">Using the Proxy object, we can create dynamic getters and setters for objects in JavaScript.</p>
+                        <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr 9, 2023</span></p>
+                    </div>
                 </li>
-                <li class="boxframe__item">
-                    <a href=/git/p/1 class="boxframe__link">Git</a>
+                <li class="lineframe__item">
+                    <img alt="" class="pic" src=./img/work-sunrise.png>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">An Introduction to JavaScript Proxy</a>
+                        </h3>
+                        <p class="lineframe__regulartext">A quick introduction to the JavaScript Proxy object and where it can be used.</p>
+                        <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr 2, 2023</span></p>
+                    </div>
                 </li>
-                <li class="boxframe__item">
-                    <a href=/c/js-interviews/p/1 class="boxframe__link">JavaScript Interview Questions</a>
+                <li class="lineframe__item">
+                        <img alt="" class="pic" src=./img/work-sunrise.png>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">List with floating section headings</a>
+                        </h3>
+                        <p class="lineframe__regulartext">Creates a list with floating headings for each section.</p>
+                        <p class="lineframe__commenttext">CSS, Visual · <span class=inline-block>Oct 11,  2021</span></p>
+                    </div>
                 </li>
-                <li class="boxframe__item">
-                    <a href=/python/p/1 class="boxframe__link">Python</a>
+                <li class="lineframe__item">
+                    <img alt="" class="pic" height=144 src=./img/work-sunrise.png width=144 loading=lazy>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">Custom checkbox</a>
+                        </h3>
+                        <p class="lineframe__regulartext">Creates a styled checkbox with animation on state change.</p>
+                        <p class="lineframe__commenttext">CSS, Visual · <span class=inline-block>Oct 11, 2021</span></p>
+                    </div>
                 </li>
-                <li class="boxframe__item">
-                    <a href=/js/t/node/p/1 class="boxframe__link">Node.js</a>
+                <li class="lineframe__item">
+                        <img alt="" class="pic" src=./img/work-sunrise.png>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">Button with ripple effect</a>
+                        </h3>
+                        <p class="lineframe__regulartext">Renders a button that animates a ripple effect when clicked.</p>
+                        <p class="lineframe__commenttext">React, Components · <span class=inline-block>Oct 13, 2021</span></p>
+                    </div>
                 </li>
-                <li class="boxframe__item">
-                    <a href=/collections/p/1 class="boxframe__link">More collections</a>
+                <li class="lineframe__item">
+                    <img alt="" class="pic" src=./img/work-sunrise.png>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">Expandable object tree view</a>
+                        </h3>
+                        <p class="lineframe__regulartext">Renders a tree view of a JSON object or array with collapsible content.</p>
+                        <p class="lineframe__commenttext">React, Components · <span class=inline-block>Nov 16, 2020</span></p>
+                    </div>
+                </li>
+                <li class="lineframe__item">
+                    <img alt="" class="pic" src=./img/work-sunrise.png>
+                    <div class="lineframe_text">
+                        <h3 class="h3 lineframe__tems">
+                            <a href=/ class="lineframe__link">File drag and drop area</a>
+                        </h3>
+                        <p class="lineframe__regulartext">Renders a file drag and drop component for a single file.</p>
+                        <p class="lineframe__commenttext">React, Components · <span class=inline-block>Oct 13, 2021</span></p>
+                    </div>
                 </li>
             </ul>
+        </div>
+    </main>
 
-            <div class="lineframe">
-                <a href=/list/p/1 class="lineframe__title">
-                    <h2 class="lineframe__alt">New &amp; Popular Snippets</h2>
-                </a>
-                <ul class=lineframe__list>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/contemporary-desk.webp type=image/webp>
-                            <img alt="" class="pic" height=144 src=/assets/preview/contemporary-desk.jpg width=144
-                                loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/articles/s/nodejs-test-module-introduction
-                                    class="lineframe__link">Introduction to the Node.js test module</a>
-                            </h3>
-                            <p class="lineframe__regulartext">The Node.js test module is a new
-                                testing tool that's still in its early stages. Learn more about it in this short
-                                introduction.</p>
-                            <p class="lineframe__commenttext">JavaScript, Node · <span class=inline-block>Apr
-                                    30, 2023</span></p>
-                        </div>
-                    </li>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/customs.webp type=image/webp><img alt="" class="pic"
-                                height=144 src=/assets/preview/customs.jpg width=144 loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/articles/s/js-typecheck-proxy class="lineframe__link">Typechecking
-                                    objects with Proxy in
-                                    JavaScript</a>
-                            </h3>
-                            <p class="lineframe__regulartext">A simple way to typecheck objects at
-                                runtime using the Proxy object.</p>
-                            <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr
-                                    23, 2023</span></p>
-                        </div>
-                    </li>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/icebreaker.webp type=image/webp>
-                            <img alt="" class="pic" height=144 src=/assets/preview/icebreaker.jpg width=144
-                                loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/articles/s/js-cannot-extend-proxy-object
-                                    class="lineframe__link">Tip: You can't extend the Proxy object</a>
-                            </h3>
-                            <p class="lineframe__regulartext">Turns out the Proxy object is not
-                                extensible, but there's a way around its limitations.</p>
-                            <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr
-                                    17, 2023</span></p>
-                        </div>
-                    </li>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/green-cabin-cow.webp type=image/webp>
-                            <img alt="" class="pic" height=144 src=/assets/preview/green-cabin-cow.jpg width=144
-                                loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/articles/s/js-dynamic-getter-setter-proxy
-                                    class="lineframe__link">Can I create dynamic setters and getters in
-                                    JavaScript?</a>
-                            </h3>
-                            <p class="lineframe__regulartext">Using the Proxy object, we can create
-                                dynamic getters and setters for objects in JavaScript.</p>
-                            <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr
-                                    9, 2023</span></p>
-                        </div>
-                    </li>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/red-mountain-range.webp type=image/webp>
-                            <img alt="" class="pic" height=144 src=/assets/preview/red-mountain-range.jpg width=144
-                                loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/articles/s/js-proxy-introduction class="lineframe__link">An
-                                    Introduction to JavaScript Proxy</a>
-                            </h3>
-                            <p class="lineframe__regulartext">A quick introduction to the JavaScript
-                                Proxy object and where it can be used.</p>
-                            <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr
-                                    2, 2023</span></p>
-                        </div>
-                    </li>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/pop-of-green.webp type=image/webp>
-                            <img alt="" class="pic" height=144 src=/assets/preview/pop-of-green.jpg width=144
-                                loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/css/s/floating-list-titles class="lineframe__link">List with
-                                    floating section headings</a>
-                            </h3>
-                            <p class="lineframe__regulartext">Creates a list with floating headings
-                                for each section.</p>
-                            <p class="lineframe__commenttext">CSS, Visual · <span class=inline-block>Oct 11,
-                                    2021</span></p>
-                        </div>
-                    </li>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/interior-8.webp type=image/webp>
-                            <img alt="" class="pic" height=144 src=/assets/preview/interior-8.jpg width=144
-                                loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/css/s/custom-checkbox class="lineframe__link">Custom
-                                    checkbox</a>
-                            </h3>
-                            <p class="lineframe__regulartext">Creates a styled checkbox with
-                                animation on state change.</p>
-                            <p class="lineframe__commenttext">CSS, Visual · <span class=inline-block>Oct 11,
-                                    2021</span></p>
-                        </div>
-                    </li>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/mountain-lake-cottage.webp type=image/webp>
-                            <img alt="" class="pic" height=144 src=/assets/preview/mountain-lake-cottage.jpg width=144
-                                loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/react/s/ripple-button class="lineframe__link">Button with
-                                    ripple effect</a>
-                            </h3>
-                            <p class="lineframe__regulartext">Renders a button that animates a ripple
-                                effect when clicked.</p>
-                            <p class="lineframe__commenttext">React, Components · <span class=inline-block>Oct
-                                    13, 2021</span></p>
-                        </div>
-                    </li>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/digital-nomad-9.webp type=image/webp>
-                            <img alt="" class="pic" height=144 src=/assets/preview/digital-nomad-9.jpg width=144
-                                loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/react/s/tree-view class="lineframe__link">Expandable object
-                                    tree view</a>
-                            </h3>
-                            <p class="lineframe__regulartext">Renders a tree view of a JSON object or
-                                array with collapsible content.</p>
-                            <p class="lineframe__commenttext">React, Components · <span class=inline-block>Nov
-                                    16, 2020</span></p>
-                        </div>
-                    </li>
-                    <li class="lineframe__item">
-                        <picture>
-                            <source srcset=/assets/preview/man-red-sunset.webp type=image/webp>
-                            <img alt="" class="pic" height=144 src=/assets/preview/man-red-sunset.jpg width=144
-                                loading=lazy>
-                        </picture>
-                        <div class="lineframe_text">
-                            <h3 class="h3 lineframe__tems">
-                                <a href=/react/s/file-drop class="lineframe__link">File drag and drop
-                                    area</a>
-                            </h3>
-                            <p class="lineframe__regulartext">Renders a file drag and drop component
-                                for a single file.</p>
-                            <p class="lineframe__commenttext">React, Components · <span class=inline-block>Oct
-                                    13, 2021</span></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </main>
-
-        <footer class="footer">
-        </footer>
-    </div>
+    <footer class="footer">
+    </footer>
 </body>
 
 </html>
