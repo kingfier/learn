@@ -1,21 +1,16 @@
 .header {
-    background-color: hsl(252, 22%, 5%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
+  background-color: hsl(250, 23%, 5%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 
-    @media (max-width: 1280px) {
-        padding: 0 calc((100% - 928px)/2);
-        justify-content: space-between;
-    }
+  &logo {
+    align-items: flex-start;
+  }
 
-    &logo {
-        align-items: flex-start;
-    }
-
-    &search {
-        align-items: flex-end;
-        flex: 0 0 344px;
-    }
+  &search {
+    align-items: flex-end;
+    flex: 0 0 344px;
+  }
 }
