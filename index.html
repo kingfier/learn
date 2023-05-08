@@ -10,164 +10,167 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="page__header header">
         <div class="header__logo">
-            <a href="/" class="logo__link" title="30 seconds of code">
-                <img src="./img/logo.png" alt="Home" class="logo">
+            <a href="/" class="logo" title="30 seconds of code">
+                <img src="./img/logo.png" alt="Home" class="logo__img">
             </a>
         </div>
-
-
-        <div class="search">
-            <input aria-label="Search snippets and collections" class="search__frame" placeholder="Search"
+        <div class="header__search">
+            <input aria-label="Search snippets and collections" class="search" placeholder="Search"
                 type="search">
         </div>
     </header>
 
-    <main class="main">
-        <div class="main__card">
-            <div class="card__picture">
-                <img alt="pic1" src=./img/work-sunrise.png>
-            </div>
-            <div class="card__words">
-                <h2 class="h2 card__title">Discover short code
-                    snippets for all your development needs.</h2>
-                <p class="p card__text">Browse snippets by collection or
-                    check out our top picks and latest articles below.</p>
-            </div>
+    <main class="page__main main">
+        <div class="main__upper card">
+                <img alt="img" src=./img/work-sunrise.png class="card__img">
+            <h2 class="card__title">Discover short code snippets for all your development needs.</h2>
+            <p class="card__text">Browse snippets by collection or check out our top picks and latest articles below.
+            </p>
         </div>
-
-        <ul class="central__list">
-            <li class="central__item">
-                <a href=/ class="central__link">JavaScript</a>
-            </li>
-            <li class="central__item">
-                <a href=/ class="central__link">CSS</a>
-            </li>
-            <li class="central__item">
-                <a href=/ class="central__link">React Hooks</a>
-            </li>
-            <li class="central__item">
-                <a href=/ class="central__link">JavaScript Algorithms</a>
-            </li>
-            <li class="central__item">
-                <a href=/ class="central__link">Git</a>
-            </li>
-            <li class="central__item">
-                <a href=/ class="central__link">JavaScript Interview Questions</a>
-            </li>
-            <li class="central__item">
-                <a href=/ class="central__link">Python</a>
-            </li>
-            <li class="central__item">
-                <a href=/ class="central__link">Node.js</a>
-            </li>
-            <li class="central__item">
-                <a href=/ class="central__link">More collections</a>
-            </li>
-        </ul>
-
-        <div class="under">
-            <h2 class="lineframe__alt">New &amp; Popular Snippets</h2>
-            <ul class=lineframe__list>
-                <li class="lineframe__item">
-                    <img alt="" class="pic" height=144 src=./img/work-sunrise.png width=144 loading=lazy>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">Introduction to the Node.js test module</a>
+        <div class="main__center box">
+            <ul class="box__list">
+                <li class="box__item">
+                    <a href=/ class="link">JavaScript</a>
+                </li>
+                <li class="box__item">
+                    <a href=/ class="link">CSS</a>
+                </li>
+                <li class="box__item">
+                    <a href=/ class="link">React Hooks</a>
+                </li>
+                <li class="box__item">
+                    <a href=/ class="link">JavaScript Algorithms</a>
+                </li>
+                <li class="box__item">
+                    <a href=/ class="link">Git</a>
+                </li>
+                <li class="box__item">
+                    <a href=/ class="link">JavaScript Interview Questions</a>
+                </li>
+                <li class="box__item">
+                    <a href=/ class="link">Python</a>
+                </li>
+                <li class="box__item">
+                    <a href=/ class="link">Node.js</a>
+                </li>
+                <li class="box__item">
+                    <a href=/ class="link">More collections</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main__under box">
+            <h2 class="box__title">New &amp; Popular Snippets</h2>
+            <ul class="box__list">
+                <li class="box__card card">
+                    <img alt="" class="card__img" height=144 src=./img/work-sunrise.png width=144 loading=lazy>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">Introduction to the Node.js test module</a>
                         </h3>
-                        <p class="lineframe__regulartext">The Node.js test module is a new testing tool that's still in its early stages. Learn more about it in this short introduction.</p>
-                        <p class="lineframe__commenttext">JavaScript, Node · <span class=inline-block>Apr 30, 2023</span></p>
+                        <p class="text__general">The Node.js test module is a new testing tool that's still in
+                            its early stages. Learn more about it in this short introduction.</p>
+                        <p class="text__comment">JavaScript, Node · <span class="date">Apr 30, 2023</span></p>
                     </div>
                 </li>
-                <li class="lineframe__item">
-                    <img alt="" class="pic" src=./img/work-sunrise.png>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">Typechecking objects with Proxy in JavaScript</a>
+                <li class="box__card card">
+                    <img alt="" class="card__img" src=./img/work-sunrise.png>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">Typechecking objects with Proxy in JavaScript</a>
                         </h3>
-                        <p class="lineframe__regulartext">A simple way to typecheck objects at runtime using the Proxy object.</p>
-                        <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr 23, 2023</span></p>
+                        <p class="text__general">A simple way to typecheck objects at runtime using the Proxy
+                            object.</p>
+                        <p class="text__comment">JavaScript, Object · <span class="date">Apr 23,
+                                2023</span></p>
                     </div>
                 </li>
-                <li class="lineframe__item">
-                    <img alt="" class="pic" src=./img/work-sunrise.png>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">Tip: You can't extend the Proxy object</a>
+                <li class="box__card card">
+                    <img alt="" class="card__img" src=./img/work-sunrise.png>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">Tip: You can't extend the Proxy object</a>
                         </h3>
-                        <p class="lineframe__regulartext">Turns out the Proxy object is not extensible, but there's a way around its limitations.</p>
-                        <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr 17, 2023</span></p>
+                        <p class="text__general">Turns out the Proxy object is not extensible, but there's a
+                            way around its limitations.</p>
+                        <p class="text__comment">JavaScript, Object · <span class="date">Apr 17,
+                                2023</span></p>
                     </div>
                 </li>
-                <li class="lineframe__item">
-                    <img alt="" class="pic" src=./img/work-sunrise.png>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">Can I create dynamic setters and getters in JavaScript?</a>
+                <li class="box__card card">
+                    <img alt="" class="card__img" src=./img/work-sunrise.png>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">Can I create dynamic setters and getters in
+                                JavaScript?</a>
                         </h3>
-                        <p class="lineframe__regulartext">Using the Proxy object, we can create dynamic getters and setters for objects in JavaScript.</p>
-                        <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr 9, 2023</span></p>
+                        <p class="text__general">Using the Proxy object, we can create dynamic getters and
+                            setters for objects in JavaScript.</p>
+                        <p class="text__comment">JavaScript, Object · <span class="date">Apr 9,
+                                2023</span></p>
                     </div>
                 </li>
-                <li class="lineframe__item">
-                    <img alt="" class="pic" src=./img/work-sunrise.png>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">An Introduction to JavaScript Proxy</a>
+                <li class="box__card card">
+                    <img alt="" class="card__img" src=./img/work-sunrise.png>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">An Introduction to JavaScript Proxy</a>
                         </h3>
-                        <p class="lineframe__regulartext">A quick introduction to the JavaScript Proxy object and where it can be used.</p>
-                        <p class="lineframe__commenttext">JavaScript, Object · <span class=inline-block>Apr 2, 2023</span></p>
+                        <p class="text__general">A quick introduction to the JavaScript Proxy object and where
+                            it can be used.</p>
+                        <p class="text__comment">JavaScript, Object · <span class="date">Apr 2,
+                                2023</span></p>
                     </div>
                 </li>
-                <li class="lineframe__item">
-                        <img alt="" class="pic" src=./img/work-sunrise.png>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">List with floating section headings</a>
+                <li class="box__card card">
+                    <img alt="" class="card__img" src=./img/work-sunrise.png>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">List with floating section headings</a>
                         </h3>
-                        <p class="lineframe__regulartext">Creates a list with floating headings for each section.</p>
-                        <p class="lineframe__commenttext">CSS, Visual · <span class=inline-block>Oct 11,  2021</span></p>
+                        <p class="text__general">Creates a list with floating headings for each section.</p>
+                        <p class="text__comment">CSS, Visual · <span class="date">Oct 11, 2021</span></p>
                     </div>
                 </li>
-                <li class="lineframe__item">
-                    <img alt="" class="pic" height=144 src=./img/work-sunrise.png width=144 loading=lazy>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">Custom checkbox</a>
+                <li class="box__card card">
+                    <img alt="" class="card__img" src=./img/work-sunrise.png>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">Custom checkbox</a>
                         </h3>
-                        <p class="lineframe__regulartext">Creates a styled checkbox with animation on state change.</p>
-                        <p class="lineframe__commenttext">CSS, Visual · <span class=inline-block>Oct 11, 2021</span></p>
+                        <p class="text__general">Creates a styled checkbox with animation on state change.</p>
+                        <p class="text__comment">CSS, Visual · <span class="date">Oct 11, 2021</span></p>
                     </div>
                 </li>
-                <li class="lineframe__item">
-                        <img alt="" class="pic" src=./img/work-sunrise.png>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">Button with ripple effect</a>
+                <li class="box__card card">
+                    <img alt="" class="card__img" src=./img/work-sunrise.png>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">Button with ripple effect</a>
                         </h3>
-                        <p class="lineframe__regulartext">Renders a button that animates a ripple effect when clicked.</p>
-                        <p class="lineframe__commenttext">React, Components · <span class=inline-block>Oct 13, 2021</span></p>
+                        <p class="text__general">Renders a button that animates a ripple effect when clicked.</p>
+                        <p class="text__comment">React, Components · <span class="date">Oct 13, 2021</span></p>
                     </div>
                 </li>
-                <li class="lineframe__item">
-                    <img alt="" class="pic" src=./img/work-sunrise.png>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">Expandable object tree view</a>
+                <li class="box__card card">
+                    <img alt="" class="card__img" src=./img/work-sunrise.png>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">Expandable object tree view</a>
                         </h3>
-                        <p class="lineframe__regulartext">Renders a tree view of a JSON object or array with collapsible content.</p>
-                        <p class="lineframe__commenttext">React, Components · <span class=inline-block>Nov 16, 2020</span></p>
+                        <p class="text__general">Renders a tree view of a JSON object or array with collapsible content.</p>
+                        <p class="text__comment">React, Components · <span class="date">Nov 16, 2020</span></p>
                     </div>
                 </li>
-                <li class="lineframe__item">
-                    <img alt="" class="pic" src=./img/work-sunrise.png>
-                    <div class="lineframe_text">
-                        <h3 class="h3 lineframe__tems">
-                            <a href=/ class="lineframe__link">File drag and drop area</a>
+                <li class="box__card card">
+                    <img alt="" class="card__img" src=./img/work-sunrise.png>
+                    <div class="card__text text">
+                        <h3 class="text__title">
+                            <a href=/ class="link">File drag and drop area</a>
                         </h3>
-                        <p class="lineframe__regulartext">Renders a file drag and drop component for a single file.</p>
-                        <p class="lineframe__commenttext">React, Components · <span class=inline-block>Oct 13, 2021</span></p>
+                        <p class="text__general">Renders a file drag and drop component for a single file.</p>
+                        <p class="text__comment">React, Components · <span class="date">Oct 13, 2021</span></p>
                     </div>
                 </li>
             </ul>

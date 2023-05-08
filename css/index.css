@@ -1,6 +1,64 @@
 body {
-  background-color: rgb(27, 30, 202);
+  margin: 0;
+  background-color: hsl(240, 49%, 7%);
+  /*
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      */
 }
-body img {
+
+.header {
+  background-color: hsl(252, 22%, 5%);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+@media (max-width: 1280px) {
+  .header {
+    padding: 0 calc((100% - 928px) / 2);
+    justify-content: space-between;
+  }
+}
+.headerlogo {
+  align-items: flex-start;
+}
+.headersearch {
+  align-items: flex-end;
+  flex: 0 0 344px;
+}
+
+.logo__img {
+  height: 54px;
+}
+
+.upper {
+  display: flex;
+  background-color: aliceblue;
+}
+.uppercard__img {
+  align-items: flex-end;
+  width: 42px;
+}
+.uppercard__title {
+  align-items: flex-start;
+}
+.uppercard__text {
+  align-items: flex-start;
+}
+
+.upper__card {
+  display: flex;
+  background-color: aliceblue;
+}
+.upper__card__img {
+  align-items: flex-end;
+  width: 42px;
+}
+.upper__card__title {
+  align-items: flex-start;
+}
+.upper__card__text {
+  align-items: flex-start;
 }/*# sourceMappingURL=index.css.map */

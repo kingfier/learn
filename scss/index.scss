@@ -1,7 +1,5 @@
-body {
-    background-color: rgb(27, 30, 202);
-
-    img {
-        display: flex;
-    }
-}
+@import "./ui";
+@import "./blocks/header";
+@import "./blocks/logo";
+@import "./blocks/main";
+@import "./blocks/upper";
