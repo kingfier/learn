@@ -5,11 +5,15 @@
   justify-content: space-between;
   box-sizing: border-box;
 
-  &logo {
+  &__logo {
     align-items: flex-start;
   }
-
-  &search {
+  &__img{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  &__search {
     align-items: flex-end;
     flex: 0 0 344px;
   }

@@ -10,19 +10,16 @@
 </head>
 
 <body>
-    <header class="page__header header">
-        <div class="header__container container">
-            <a href="/" class="header__logo" title="30 seconds of code">
-                <img src="./img/logo.png" alt="Home" class="header__img">
-            </a>
-        </div>
-
-            <input aria-label="Search snippets and collections" class="header_search" placeholder="Search" type="search">
+    <header class="page__header header container">
+        <a href="/" class="header__logo" title="30 seconds of code">
+            <img src="./img/logo.png" alt="Home" class="header__img">
+        </a>
+        <input aria-label="Search snippets and collections" class="header__search" placeholder="Search" type="search">
     </header>
 
     <main class="page__main main">
 
-        <div class="main__some some">
+        <!--    <div class="main__some some">
             <div class="some__container container">
                 <ul class="some__list">
                     <li class="some__item">
@@ -49,20 +46,21 @@
                     </li>
                 </ul>
             </div>
-
+        -->
         </div>
 
 
 
-        <div class="main__upper upper">
-            <div class="upper__container container">
-                <img alt="pic" src=./img/work-sunrise.png class="upper__img">
+        <div class="main__upper upper container">
+            <div class="upper__text">
                 <h2 class="upper__title">Discover short code snippets for all your development needs.</h2>
-    
                 <p class="upper__text">
                     Browse snippets by collection or check out our top picks and latest articles below.
                 </p>
             </div>
+            <picture class="upper__img">
+                <img alt="pic" src=./img/work-sunrise.png>
+            </picture>
         </div>
 
         <div class="main__central central">
