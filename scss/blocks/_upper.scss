@@ -1,19 +1,17 @@
 .upper {
   display: flex;
-  color: aliceblue;
   align-items: center;
-  justify-content: space-between; 
-  &__img {
-    width: 240px;
-    height: 240px;
-  }
-
+  justify-content: space-between;
+  height: 300px;
   &__title {
-    color: aliceblue;
+    font-size: 42px;
+    padding: 0 1rem;
+    font-weight: normal;
   }
 
   &__text {
-    color: aliceblue;
+    font-size: 18px;
+    padding: 0 1rem;
   }
 
 }

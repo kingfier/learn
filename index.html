@@ -10,14 +10,19 @@
 </head>
 
 <body>
-    <header class="page__header header container">
-        <a href="/" class="header__logo" title="30 seconds of code">
-            <img src="./img/logo.png" alt="Home" class="header__img">
-        </a>
-        <input aria-label="Search snippets and collections" class="header__search" placeholder="Search" type="search">
+    <header class="page__header header">
+        <article class="header-element container">
+            <a href="/" class="header-element__logo" title="30 seconds of code">
+                <img src="./img/logo.png" alt="Home" class="header-element__img">
+            </a>
+            <article class="header-element__search">
+                <input aria-label="Search snippets and collections" class="header-element__search__input" placeholder="Search"
+                    type="search">
+            </article>
+        </article>
     </header>
 
-    <main class="page__main main">
+    <main class="page__main main container">
 
         <!--    <div class="main__some some">
             <div class="some__container container">
@@ -46,8 +51,8 @@
                     </li>
                 </ul>
             </div>
-        -->
         </div>
+        -->
 
 
 
@@ -58,39 +63,55 @@
                     Browse snippets by collection or check out our top picks and latest articles below.
                 </p>
             </div>
-            <picture class="upper__img">
-                <img alt="pic" src=./img/work-sunrise.png>
-            </picture>
+            <img alt="pic" src=./img/work-sunrise.png class="upper__img" width="240" height="240">
         </div>
 
-        <div class="main__central central">
+        <div class="main__central central container">
             <ul class="central__list">
                 <li class="central__item">
-                    <a href=/ class="central__link">JavaScript</a>
+                    <article class="central-item__frame">
+                        <a href=/ class="central-item__link">JavaScript</a>
+                    </article>
                 </li>
                 <li class="central__item">
-                    <a href=/ class="central__link">CSS</a>
+                    <article class="central-item__frame">
+                        <a href=/ class="central-item__link">CSS</a>
+                    </article>
                 </li>
                 <li class="central__item">
-                    <a href=/ class="central__link">React Hooks</a>
+                    <article class="central-item__frame">
+                        <a href=/ class="central-item__link">React Hooks</a>
+                    </article>
                 </li>
                 <li class="central__item">
-                    <a href=/ class="central__link">JavaScript Algorithms</a>
+                    <article class="central-item__frame">
+                        <a href=/ class="central-item__link">JavaScript Algorithms</a>
+                    </article>
                 </li>
                 <li class="central__item">
-                    <a href=/ class="central__link">Git</a>
+                    <article class="central-item__frame">
+                        <a href=/ class="central-item__link">Git</a>
+                    </article>
                 </li>
                 <li class="central__item">
-                    <a href=/ class="central__link">JavaScript Interview Questions</a>
+                    <article class="central-item__frame">
+                        <a href=/ class="central-item__link">JavaScript Interview Questions</a>
+                    </article>
                 </li>
                 <li class="central__item">
-                    <a href=/ class="central__link">Python</a>
+                    <article class="central-item__frame">
+                        <a href=/ class="central-item__link">Python</a>
+                    </article>
                 </li>
                 <li class="central__item">
-                    <a href=/ class="central__link">Node.js</a>
+                    <article class="central-item__frame">
+                        <a href=/ class="central-item__link">Node.js</a>
+                    </article>
                 </li>
                 <li class="central__item">
-                    <a href=/ class="central__link">More collections</a>
+                    <article class="central-item__frame">
+                        <a href=/ class="central-item__link">More collections</a>
+                    </article>
                 </li>
             </ul>
         </div>
