@@ -4,7 +4,7 @@
   justify-content: space-between;
   height: 300px;
   &__title {
-    font-size: 42px;
+    font-size: 37px;
     padding: 0 1rem;
     font-weight: normal;
   }
@@ -12,6 +12,11 @@
   &__text {
     font-size: 18px;
     padding: 0 1rem;
+  }
+  &__img{
+    width: 240;
+    height: 240;
+    border-radius: 0.25rem;
   }
 
 }

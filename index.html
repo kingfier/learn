@@ -15,14 +15,24 @@
             <a href="/" class="header-element__logo" title="30 seconds of code">
                 <img src="./img/logo.png" alt="Home" class="header-element__img">
             </a>
+            <article class="shadow-menu">
+                <ul class="header-element__list">
+                    <li class="header-element__item">
+                        <a href="/" class="header-element__item__link">Snippets</a>
+                    </li>
+                    <li class="header-element__item">
+                        <a href="/" class="header-element__item__link">Collections</a>
+                    </li>
+                </ul>
+            </article>
             <article class="header-element__search">
-                <input aria-label="Search snippets and collections" class="header-element__search__input" placeholder="Search"
-                    type="search">
+                <input aria-label="Search snippets and collections" class="header-element__search__input"
+                    placeholder="Search" type="search">
             </article>
         </article>
     </header>
 
-    <main class="page__main main container">
+    <main class="page__main main">
 
         <!--    <div class="main__some some">
             <div class="some__container container">
@@ -63,6 +73,7 @@
                     Browse snippets by collection or check out our top picks and latest articles below.
                 </p>
             </div>
+            
             <img alt="pic" src=./img/work-sunrise.png class="upper__img" width="240" height="240">
         </div>
 
@@ -115,62 +126,98 @@
                 </li>
             </ul>
         </div>
-        <div class="main__under under">
-            <h2 class="under__gen-title">New &amp; Popular Snippets</h2>
+
+        <div class="main__under under container">
+            <h2 class="under__title">New &amp; Popular Snippets</h2>
             <ul class="under__list">
                 <li class="under__card">
-                    <img alt="" class="under__img" height=144 src=./img/work-sunrise.png width=144 loading=lazy>
-                    <div class="under__text">
-                        <h3 class="under__title">
-                            <a href=/ class="under__link">Introduction to the Node.js test module</a>
-                        </h3>
-                        <p class="under__general">The Node.js test module is a new testing tool that's still in
-                            its early stages. Learn more about it in this short introduction.</p>
-                        <p class="under__comment">JavaScript, Node · <span class="under__date">Apr 30, 2023</span></p>
-                    </div>
+                    <article class="under-card__frame">
+                        <img alt="" class="under-card__img" height=144 src=./img/work-sunrise.png width=144
+                            loading=lazy>
+                        <div class="under-card__text">
+                            <h3 class="under-card__title">
+                                <a href=/ class="under-card__title__link">Introduction to the Node.js test module</a>
+                            </h3>
+                            <p class="under-card__general">The Node.js test module is a new testing tool that's still in
+                                its early stages. Learn more about it in this short introduction.</p>
+                            <p class="under-card__comment">JavaScript, Node · <span class="under-card__comment__date">Apr 30,
+                                    2023</span>
+                            </p>
+                        </div>
+                    </article>
                 </li>
                 <li class="under__card">
-                    <img alt="" class="under__img" src=./img/work-sunrise.png>
-                    <div class="under__text">
-                        <h3 class="under__title">
-                            <a href=/ class="under__link">Typechecking objects with Proxy in JavaScript</a>
-                        </h3>
-                        <p class="under__general">A simple way to typecheck objects at runtime using the Proxy
-                            object.</p>
-                        <p class="under__comment">JavaScript, Object · <span class="under__date">Apr 23,
-                                2023</span></p>
-                    </div>
+                    <article class="under-card__frame">
+                        <img alt="" class="under-card__img" src=./img/work-sunrise.png>
+                        <div class="under-card__text">
+                            <h3 class="under-card__title">
+                                <a href=/ class="under-card__title__link">Typechecking objects with Proxy in JavaScript</a>
+                            </h3>
+                            <p class="under-card__general">A simple way to typecheck objects at runtime using the Proxy
+                                object.</p>
+                            <p class="under-card__comment">JavaScript, Object · <span class="under-card__comment_date">Apr 23,
+                                    2023</span></p>
+                        </div>
+                    </article>
                 </li>
                 <li class="under__card">
-                    <img alt="" class="under__img" src=./img/work-sunrise.png>
-                    <div class="under__text">
-                        <h3 class="under__title">
-                            <a href=/ class="under__link">Tip: You can't extend the Proxy object</a>
-                        </h3>
-                        <p class="under__general">Turns out the Proxy object is not extensible, but there's a
-                            way around its limitations.</p>
-                        <p class="under__comment">JavaScript, Object · <span class="under__date">Apr 17,
-                                2023</span></p>
-                    </div>
+                    <article class="under-card__frame">
+                        <img alt="" class="under-card__img" src=./img/work-sunrise.png>
+                        <div class="under-card__text">
+                            <h3 class="under-card__title">
+                                <a href=/ class="under-card__title__link">Tip: You can't extend the Proxy object</a>
+                            </h3>
+                            <p class="under-card__general">Turns out the Proxy object is not extensible, but there's a
+                                way around its limitations.</p>
+                            <p class="under-card__comment">JavaScript, Object · <span class="under-card__comment__date">Apr 17,
+                                    2023</span></p>
+                        </div>
+                    </article>
                 </li>
                 <li class="under__card">
-                    <img alt="" class="under__img" src=./img/work-sunrise.png>
-                    <div class="under__text">
-                        <h3 class="under__title">
-                            <a href=/ class="under__link">Can I create dynamic setters and getters in
-                                JavaScript?</a>
-                        </h3>
-                        <p class="under__general">Using the Proxy object, we can create dynamic getters and
-                            setters for objects in JavaScript.</p>
-                        <p class="under__comment">JavaScript, Object · <span class="under__date">Apr 9,
-                                2023</span></p>
-                    </div>
+                    <article class="under-card__frame">
+                        <img alt="" class="under-card__img" src=./img/work-sunrise.png>
+                        <div class="under-card__text">
+                            <h3 class="under-card__title">
+                                <a href=/ class="under-card__title__link">Can I create dynamic setters and getters in
+                                    JavaScript?</a>
+                            </h3>
+                            <p class="under-card__general">Using the Proxy object, we can create dynamic getters and
+                                setters for objects in JavaScript.</p>
+                            <p class="under-card__comment">JavaScript, Object · <span class="under-card__comment__date">Apr 9,
+                                    2023</span></p>
+                        </div>
+                    </article>
                 </li>
             </ul>
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="page__footer footer">
+        <ul class="footer__list container">
+            <li class="footer__item">
+                <a href="/" class="footer__item__link">About</a>
+            </li>
+            <li class="footer__item">
+                <a href="/" class="footer__item__link">Cookies</a>
+            </li>
+            <li class="footer__item">
+                <a href="/" class="footer__item__link">FAQ</a>
+            </li>
+            <li class="footer__item">
+                <a href="/" class="footer__item__link">RSS</a>
+            </li>
+            <li class="footer__item">
+                <a href="/" class="footer__item__link">GitHub</a>
+            </li>
+        </ul>
+        <div class="footer__text container">
+            <p class="footer__text__p">Website, name & logo © 2017-2023 <a href="/" class="footer__text__link">30 seconds of code</a></p>
+            <p class="footer__text__p">Individual snippets licensed under <a href="/" class="footer__text__link">CC-BY-4.0</a></p>
+            <p class="footer__text__p">Powered by <a href="/" class="footer__text__link">____</a>
+                , <a href="/" class="footer__text__link">____</a>
+                & <a href="/" class="footer__text__link">GitHub</a></p>
+        </div>
     </footer>
 </body>
 

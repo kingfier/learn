@@ -1,35 +1,65 @@
-.header-element{
+@media (min-width: 960px) {
+  shadow-menu{display: none;}
+}
+
+.header-element {
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   height: 100%;
 
+  @media (min-width: 960px) {
+    shadow-menu{display: none;}
+  }
+
+  &__list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+  }
+
+  &__item {
+    &__link {
+      font-size: 16px;
+      text-decoration: none;
+      color: aliceblue;
+    }
+
+    &__link:hover {
+      color: var(--cl-link);
+    }
+  }
+
   &__logo {
     align-items: flex-start;
   }
-  &__img{
+
+  &__img {
     width: 100%;
     height: 50px;
     margin-bottom: 10px;
   }
+
   &__search {
     align-items: flex-end;
-    color: aliceblue;
-    background-color: rgb(54, 52, 49);
+    color: rgb(252, 254, 255);
+    background-color: rgb(0, 0, 0);
     margin: 0px 0px 0px 4px;
     height: 44px;
-    
-    &__input{
-      background-color: rgb(54, 52, 49);
+    white-space: nowrap;
+    &__input {
+      color: aliceblue;
+      background-color: rgb(0, 0, 0);
       border: 0;
       height: 44px;
       width: 390px;
       padding: 4px 8px;
-      font-size: 16px;
+      font-size: 18px;
     }
   }
-  &__search::before{
+
+  &__search::before {
     font-size: 20px;
     content: "֎";
     padding-left: 12px;
