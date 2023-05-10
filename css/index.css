@@ -16,6 +16,10 @@ body {
   padding-left: 16px;
 }
 
+:root {
+  --cl-link: rgb(148, 185, 244);
+}
+
 @media (min-width: 960px) {
   shadow-menu {
     display: none;
@@ -137,7 +141,7 @@ body {
   text-decoration: none;
 }
 .central-item__link:hover {
-  color: rgb(56, 142, 241);
+  color: var(--cl-link);
 }
 
 .under__list {
@@ -202,10 +206,6 @@ body {
 .main__under {
   margin-bottom: 32px;
   padding: 16px;
-}
-
-:root {
-  --cl-link: rgb(148, 185, 244);
 }
 
 .footer {
