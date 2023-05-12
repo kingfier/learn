@@ -2,7 +2,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin: 0;
-  background-color: hsl(240, 49%, 7%);
+  background-color: #09091b;
   color: aliceblue;
 }
 
@@ -17,5 +17,6 @@ body {
 }
 
 :root{
-  --cl-link: rgb(148, 185, 244);
+  --cl-link: #94b9f4;
+  --cl-bk-box: #2b2b3b77;
 }
