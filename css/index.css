@@ -1,1 +1,7 @@
-/*# sourceMappingURL=index.css.map */
+body {
+  background-color: rgba(0, 0, 0, 0.925);
+}
+
+.header {
+  display: flex;
+}/*# sourceMappingURL=index.css.map */
