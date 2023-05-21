@@ -1,62 +1,33 @@
 .under {
-    $this: &;
+
     align-items: center;
-    //font-weight: 500;
-    //display: flex;
-    //align-items: center;
-    //padding: 12px 16px;
-    //border: 20px;
-    //border-radius: 0.5rem;
-    //min-height: 190px;
-    //box-sizing: border-box;
-    //gap: 30px;
     margin-bottom: 60px;
-    &__list{
+
+    &__list {
         padding: 0px 16px;
     }
-    &__card{
+
+    &__title {
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    &__item {
         display: flex;
-        background-color: var(--cl-bk-box);
+        background-color: var(--color-bg-box);
         padding: 12px 16px;
         border-radius: 8px;
         gap: 30px;
         align-items: center;
         margin-top: 20px;
         margin-bottom: 20px;
-        &:hover{
-            #{$this} {
-                &__link{
-                    text-decoration: underline;
-                    
-                }
-            }
-           
-        }
+
         @media (max-width: 768px) {
             flex-direction: column;
         }
     }
-    /*
-    1280 > ...
-    1024 - 1280
-    768 - 1024
-    320 - 768
-    
-    */
-    &__link{
-        text-decoration: none;
-        color:aliceblue
-    }
 
-    &__title{
-        font-size: 32px;
-        font-weight: 300;
-    }
-
-    // .under-card:hover__title__link
-    // .under-card:hover .under-card__title__link
-
-    &__img{
+    &__img {
         width: 144px;
         height: 144px;
         border-radius: 0.5rem;
@@ -70,22 +41,39 @@
 
 
 
-    &__card-title{
+
+}
+
+.card {
+    $this: &;
+
+    &:hover {
+        #{$this} {
+            &__link {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__link {
+        color: var(--color-regular);
+        text-decoration: none;
+    }
+
+    &__title {
         font-size: 22px;
         font-weight: 500;
         letter-spacing: .25px;
     }
 
-    &__general{
+    &__text {
         font-size: 24;
         font-weight: 350;
-        color: rgba(203, 209, 214, 0.932);
+        color: var(--color-general-under-card);
     }
 
-    &__comment{
+    &__comment {
         font-size: 14px;
-        color: rgba(240, 248, 255, 0.527);
+        color: var(--color-time-under-card);
     }
-
-    
 }

@@ -11,25 +11,27 @@
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/png">
 </head>
 
-<body>
+<body class="page">
 
     <header class="page__header">
         <div class="header container">
-            <a href="/" class="header__link" title="30 seconds of code">
-                <img src="./img/logo.png" alt="Home" class="header__link-logo">
-            </a>
+            <nav>
+                <a href="/" title="30 seconds of code">
+                    <img src="./img/logo.png" alt="Home" class="header__logo">
+                </a>
+            </nav>
             <ul class="header__list">
                 <li class="header__item">
-                    <a href="/" class="header__item-link">Snippets</a>
+                    <a href="/" class="header__link">Snippets</a>
                 </li>
                 <li class="header__item">
-                    <a href="/" class="header__item-link">Collections</a>
+                    <a href="/" class="header__link">Collections</a>
                 </li>
             </ul>
-            <article class="header__search">
-                <input aria-label="Search snippets and collections" class="header__search-input" placeholder="Search"
+            <div class="header__searchbox">
+                <input aria-label="Search snippets and collections" class="header__search" placeholder="Search"
                     type="search">
-            </article>
+            </div>
         </div>
     </header>
 
@@ -37,12 +39,12 @@
 
         <div class="main__upper upper ">
 
-            <div class="upper__card">
+            <article class="upper__card">
                 <h2 class="upper__title">Discover short code snippets for all your development needs.</h2>
                 <p class="upper__text">
                     Browse snippets by collection or check out our top picks and latest articles below.
                 </p>
-            </div>
+            </article>
 
             <img alt="" src=./img/work-sunrise.png class="upper__img">
 
@@ -51,35 +53,35 @@
         <div class="main__central central">
             <ul class="central__list">
                 <li class="central__item">
-                    <a href=/ class="central__link">JavaScript</a>
+                    <nav><a href=/ class="central__link">JavaScript</a></nav>
                 </li>
 
                 <li class="central__item">
-                    <a href=/ class="central__link">CSS</a>
+                    <nav><a href=/ class="central__link">CSS</a></nav>
                 </li>
 
                 <li class="central__item">
-                    <a href=/ class="central__link">React Hooks</a>
+                    <nav><a href=/ class="central__link">React Hooks</a></nav>
                 </li>
 
                 <li class="central__item">
-                    <a href=/ class="central__link">JavaScript Algorithms</a>
+                    <nav><a href=/ class="central__link">JavaScript Algorithms</a></nav>
                 </li>
 
                 <li class="central__item">
-                    <a href=/ class="central__link">JavaScript Interview Questions</a>
+                    <nav><a href=/ class="central__link">JavaScript Interview Questions</a></nav>
                 </li>
 
                 <li class="central__item">
-                    <a href=/ class="central__link">Python</a>
+                    <nav><a href=/ class="central__link">Python</a></nav>
                 </li>
 
                 <li class="central__item">
-                    <a href=/ class="central__link">Node.js</a>
+                    <nav><a href=/ class="central__link">Node.js</a></nav>
                 </li>
 
                 <li class="central__item">
-                    <a href=/ class="central__link">More collections</a>
+                    <nav><a href=/ class="central__link">More collections</a></nav>
                 </li>
             </ul>
         </div>
@@ -87,53 +89,55 @@
         <div class="main__under under">
             <h2 class="under__title container">New & Popular Snippets</h2>
             <ul class="under__list">
-                <li class="under__card">
+                <li class="under__item">
                     <img alt="" class="under__img" src=./img/work-sunrise.png>
-                    <div class="under__text">
-                        <h3 class="under__card-title">
-                            <a href=/ class="under__link">Introduction to the Node.js test module</a>
-                        </h3>
+                    <article class="under__card card">
+                        <nav>
+                            <h3 class="card__title">
+                                <a href=/ class="card__link">Introduction to the Node.js test module</a>
+                            </h3>
+                        </nav>
 
-                        <p class="under__general">The Node.js test module is a new testing tool that's still in
+                        <p class="card__text">The Node.js test module is a new testing tool that's still in
                             its early stages. Learn more about it in this short introduction.</p>
-                        <p class="under__comment">JavaScript, Node · <span class="under__date">Apr 30, 2023</span>
+                        <p class="card__comment">JavaScript, Node · <time class="card__time">Apr 30, 2023</time>
                         </p>
-                    </div>
+                    </article>
                 </li>
-                <li class="under__card">
-                        <img alt="" class="under__img" src=./img/work-sunrise.png>
-                        <div class="under__text">
-                            <h3 class="under__card-title">
-                                <a href=/ class="under__link">Typechecking objects with Proxy in
-                                    JavaScript</a>
-                            </h3>
-                            <p class="under__general">A simple way to typecheck objects at runtime using the Proxy
-                                object.</p>
-                            <p class="under__comment">JavaScript, Object · <span class="under__date">Apr 23, 2023</span></p>
-                        </div>
+                <li class="under__item">
+                    <img alt="" class="under__img" src=./img/work-sunrise.png>
+                    <article class="under__card card">
+                        <h3 class="card__title">
+                            <a href=/ class="card__link">Typechecking objects with Proxy in
+                                JavaScript</a>
+                        </h3>
+                        <p class="card__text">A simple way to typecheck objects at runtime using the Proxy
+                            object.</p>
+                        <p class="card__comment">JavaScript, Object · <time class="card__time">Apr 23, 2023</time></p>
+                    </article>
                 </li>
-                <li class="under__card">
-                        <img alt="" class="under__img" src=./img/work-sunrise.png>
-                        <div class="under__text">
-                            <h3 class="under__card-title">
-                                <a href=/ class="under__link">Tip: You can't extend the Proxy object</a>
-                            </h3>
-                            <p class="under__general">Turns out the Proxy object is not extensible, but there's a
-                                way around its limitations.</p>
-                            <p class="under__comment">JavaScript, Object · <span class="under__date">Apr 17, 2023</span></p>
-                        </div>
+                <li class="under__item">
+                    <img alt="" class="under__img" src=./img/work-sunrise.png>
+                    <article class="under__card card">
+                        <h3 class="card__title">
+                            <a href=/ class="card__link">Tip: You can't extend the Proxy object</a>
+                        </h3>
+                        <p class="card__text">Turns out the Proxy object is not extensible, but there's a
+                            way around its limitations.</p>
+                        <p class="card__comment">JavaScript, Object · <time class="card__time">Apr 17, 2023</time></p>
+                    </article>
                 </li>
-                <li class="under__card">
-                        <img alt="" class="under__img" src=./img/work-sunrise.png>
-                        <div class="under__text">
-                            <h3 class="under__card-title">
-                                <a href=/ class="under__link">Can I create dynamic setters and getters in
-                                    JavaScript?</a>
-                            </h3>
-                            <p class="under__general">Using the Proxy object, we can create dynamic getters and
-                                setters for objects in JavaScript.</p>
-                            <p class="under__comment">JavaScript, Object · <span class="under__date">Apr 9, 2023</span></p>
-                        </div>
+                <li class="under__item">
+                    <img alt="" class="under__img" src=./img/work-sunrise.png>
+                    <article class="under__card card">
+                        <h3 class="card__title">
+                            <a href=/ class="card__link">Can I create dynamic setters and getters in
+                                JavaScript?</a>
+                        </h3>
+                        <p class="card__text">Using the Proxy object, we can create dynamic getters and
+                            setters for objects in JavaScript.</p>
+                        <p class="card__comment">JavaScript, Object · <time class="card__time">Apr 9, 2023</time></p>
+                    </article>
                 </li>
             </ul>
         </div>
@@ -142,29 +146,34 @@
     <footer class="page__footer footer container">
         <ul class="footer__list ">
             <li class="footer__item">
-                <a href="/" class="footer__link">About</a>
+                <nav><a href="/" class="footer__link">About</a></nav>
             </li>
             <li class="footer__item">
-                <a href="/" class="footer__link">Cookies</a>
+                <nav><a href="/" class="footer__link">Cookies</a></nav>
             </li>
             <li class="footer__item">
-                <a href="/" class="footer__link">FAQ</a>
+                <nav><a href="/" class="footer__link">FAQ</a></nav>
             </li>
             <li class="footer__item">
-                <a href="/" class="footer__link">RSS</a>
+                <nav><a href="/" class="footer__link">RSS</a></nav>
             </li>
             <li class="footer__item">
-                <a href="/" class="footer__link">GitHub</a>
+                <nav><a href="/" class="footer__link">GitHub</a></nav>
             </li>
         </ul>
-        <div class="footer__text container">
-            <p class="footer__text__p">Website, name & logo © 2017-2023 <a href="/" class="footer__text__link">30
-                    seconds of code</a></p>
-            <p class="footer__text__p">Individual snippets licensed under <a href="/"
-                    class="footer__text__link">CC-BY-4.0</a></p>
-            <p class="footer__text__p">Powered by <a href="/" class="footer__text__link">____</a>
-                , <a href="/" class="footer__text__link">____</a>
-                & <a href="/" class="footer__text__link">GitHub</a></p>
+        <div class="footer__card container">
+            <nav>
+                <p class="footer__text">Website, name & logo © 2017-2023 <a href="/" class="footer__textlink">30
+                        seconds of code</a></p>
+                <p class="footer__text">Individual snippets licensed under <a href="/"
+                        class="footer__textlink">CC-BY-4.0</a>
+                </p>
+                <p class="footer__text">Powered by <a href="/" class="footer__textlink">____</a>
+                    <a href="/" class="footer__textlink">____</a>
+                    <a href="/" class="footer__textlink">GitHub</a>
+                </p>
+            </nav>
+
         </div>
     </footer>
 </body>

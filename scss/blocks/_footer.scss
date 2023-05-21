@@ -2,7 +2,7 @@
     padding-left: 16px;
     padding-right: 16px;
     font-size: 14px;
-    color: rgba(240, 248, 255, 0.658);
+    color: var(--color-footer);
 
     &__list {
         list-style: none;
@@ -14,26 +14,25 @@
     }
 
     &__link {
-        text-decoration: none;
-        color: var(--cl-link);
+        color: var(--color-link);
+
+        &:not(:hover) {
+            text-decoration: none;
+        }
     }
 
-    &__link:hover {
-        text-decoration: underline;
-    }
 
     &__text {
-        &__p {
-            margin: 8px 0px;
-        }
+        margin: 8px 0px;
+    }
 
-        &__link {
+    &__textlink {
+        color: var(--color-link);
+        
+        &:not(:hover) {
             text-decoration: none;
-            color: var(--cl-link);
-        }
-
-        &__link:hover {
-            text-decoration: underline;
         }
     }
+
+
 }

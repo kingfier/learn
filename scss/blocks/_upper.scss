@@ -1,18 +1,22 @@
 .upper {
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 300px;
   padding-right: 16px;
-  @media (max-width: 768px) { 
+
+  @media (max-width: 768px) {
     display: flex;
     flex-wrap: wrap-reverse;
   }
-  &__card{
+
+  &__card {
     padding: 0px 16px;
   }
+
   &__title {
-    font-size: 37px; 
+    font-size: 37px;
     font-weight: normal;
   }
 
@@ -20,7 +24,7 @@
     font-size: 18px;
   }
 
-  &__img{
+  &__img {
     width: 240px;
     height: 240px;
     border-radius: 5px;
@@ -29,8 +33,6 @@
     @media (max-width: 768px) {
       width: 100%;
       height: 200px;
-  }
+    }
   }
 }
-
-
