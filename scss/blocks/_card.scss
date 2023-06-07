@@ -1,0 +1,93 @@
+.card {
+    $this: &;
+    
+    
+
+    &__link-video {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 74px;
+        margin-top: 56px;
+        padding-top: 24px;
+        gap: 10px;
+        justify-content: center;
+        @media(max-width: 768px) {
+            margin-left: 0px;
+        }
+    }
+
+    &__item {
+        &:hover {
+            #{$this} {
+                &__img {
+                    transform: scale(1.05);
+                    border-radius: 0px;
+                    transition: 1s;
+                }
+            }
+        }
+        //min-width: 300px;
+        max-width: 360px;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 10px;
+        transition: 1s;
+        display: block;
+
+    }
+
+    &__logo {
+        object-fit: cover;
+        min-width: 36px;
+        height: 36px;
+        margin: 12px 12px 0px 0px;
+        border-radius: 50%;
+    }
+
+    &__intro {
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        margin: 0px;
+        white-space: 2;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+    }
+
+    &__chanel {
+        margin: 0px;
+        font-size: 14px;
+        color: rgba(240, 248, 255, 0.493);
+        text-decoration: none;
+        transition: 0.2s;
+        &:hover{
+            color: aliceblue;
+            transition: 0.2s;
+        }
+    }
+
+    &__count-watch {
+        margin: 0px;
+        font-size: 14px;
+        color: rgba(240, 248, 255, 0.493);
+    }
+    &__link-video{
+        text-decoration: none;
+        color: aliceblue;
+    }
+}

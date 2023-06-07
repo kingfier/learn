@@ -7,69 +7,285 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <title>YouTube</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body>
+<body class="page">
 
+    <div class="page__fixheader">
+    </div>
+    <header class="page__header">
+        <div class="header">
+            <div class="header__left">
+                <button class="header__menu">
+                    <div class="header__burger"></div>
+                    <div class="header__burger"></div>
+                    <div class="header__burger"></div>
+                </button>
 
-    <header class="page__header header">
+                <a class="header__link" href="/">
+                    <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" y="0" x="0"
+                        id="Layer_1" version="1.1" viewBox="-57.15 -21.25 495.3 127.5">
 
-        <button class="header__menu">
-            gh
-        </button>
+                        <g id="g7433">
+                            <path id="path7429"
+                                d="M118.9 13.3c-1.4-5.2-5.5-9.3-10.7-10.7C98.7 0 60.7 0 60.7 0s-38 0-47.5 2.5C8.1 3.9 3.9 8.1 2.5 13.3 0 22.8 0 42.5 0 42.5s0 19.8 2.5 29.2C3.9 76.9 8 81 13.2 82.4 22.8 85 60.7 85 60.7 85s38 0 47.5-2.5c5.2-1.4 9.3-5.5 10.7-10.7 2.5-9.5 2.5-29.2 2.5-29.2s.1-19.8-2.5-29.3z"
+                                fill="red" />
+                            <path id="polygon7431" fill="#fff" d="M48.6 24.3v36.4l31.6-18.2z" />
+                        </g>
+                        <g id="g7451">
+                            <g id="g7449">
+                                <path id="path7435"
+                                    d="M176.3 77.4c-2.4-1.6-4.1-4.1-5.1-7.6-1-3.4-1.5-8-1.5-13.6v-7.7c0-5.7.6-10.3 1.7-13.8 1.2-3.5 3-6 5.4-7.6 2.5-1.6 5.7-2.4 9.7-2.4 3.9 0 7.1.8 9.5 2.4 2.4 1.6 4.1 4.2 5.2 7.6 1.1 3.4 1.7 8 1.7 13.8v7.7c0 5.7-.5 10.2-1.6 13.7-1.1 3.4-2.8 6-5.2 7.6-2.4 1.6-5.7 2.4-9.8 2.4-4.2-.1-7.6-.9-10-2.5zm13.5-8.4c.7-1.7 1-4.6 1-8.5V43.9c0-3.8-.3-6.6-1-8.4-.7-1.8-1.8-2.6-3.5-2.6-1.6 0-2.8.9-3.4 2.6-.7 1.8-1 4.6-1 8.4v16.6c0 3.9.3 6.8 1 8.5.6 1.7 1.8 2.6 3.5 2.6 1.6 0 2.7-.8 3.4-2.6z"
+                                    class="st2" />
+                                <path id="path7437"
+                                    d="M360.9 56.3V59c0 3.4.1 6 .3 7.7.2 1.7.6 3 1.3 3.7.6.8 1.6 1.2 3 1.2 1.8 0 3-.7 3.7-2.1.7-1.4 1-3.7 1.1-7l10.3.6c.1.5.1 1.1.1 1.9 0 4.9-1.3 8.6-4 11-2.7 2.4-6.5 3.6-11.4 3.6-5.9 0-10-1.9-12.4-5.6-2.4-3.7-3.6-9.4-3.6-17.2v-9.3c0-8 1.2-13.8 3.7-17.5 2.5-3.7 6.7-5.5 12.6-5.5 4.1 0 7.3.8 9.5 2.3 2.2 1.5 3.7 3.9 4.6 7 .9 3.2 1.3 7.6 1.3 13.2v9.1h-20.1zm1.5-22.4c-.6.8-1 2-1.2 3.7-.2 1.7-.3 4.3-.3 7.8v3.8h8.8v-3.8c0-3.4-.1-6-.3-7.8-.2-1.8-.7-3-1.3-3.7-.6-.7-1.6-1.1-2.8-1.1-1.4-.1-2.3.3-2.9 1.1z"
+                                    class="st2" />
+                                <path id="path7439"
+                                    d="M147.1 55.3L133.5 6h11.9l4.8 22.3c1.2 5.5 2.1 10.2 2.7 14.1h.3c.4-2.8 1.3-7.4 2.7-14l5-22.4h11.9L159 55.3v23.6h-11.8V55.3z"
+                                    class="st2" />
+                                <path id="path7441"
+                                    d="M241.6 25.7V79h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.7h12v39.1c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.7z"
+                                    class="st2" />
+                                <path id="path7443"
+                                    d="M303.1 25.7V79h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.7h12v39.1c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.7z"
+                                    class="st2" />
+                                <path id="path7445" d="M274.2 15.7h-11.9v63.2h-11.7V15.7h-11.9V6h35.5z" class="st2" />
+                                <path id="path7447"
+                                    d="M342.8 34.2c-.7-3.4-1.9-5.8-3.5-7.3s-3.9-2.3-6.7-2.3c-2.2 0-4.3.6-6.2 1.9-1.9 1.2-3.4 2.9-4.4 4.9h-.1V3.3h-11.6v75.6h9.9l1.2-5h.3c.9 1.8 2.3 3.2 4.2 4.3 1.9 1 3.9 1.6 6.2 1.6 4.1 0 7-1.9 8.9-5.6 1.9-3.7 2.9-9.6 2.9-17.5v-8.4c-.1-6.1-.4-10.8-1.1-14.1zm-11 21.7c0 3.9-.2 6.9-.5 9.1-.3 2.2-.9 3.8-1.6 4.7-.8.9-1.8 1.4-3 1.4-1 0-1.9-.2-2.7-.7-.8-.5-1.5-1.2-2-2.1V38.1c.4-1.4 1.1-2.6 2.1-3.6 1-.9 2.1-1.4 3.2-1.4 1.2 0 2.2.5 2.8 1.4.7 1 1.1 2.6 1.4 4.8.3 2.3.4 5.5.4 9.6v7z"
+                                    class="st2" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
 
-        <a class="header__link" href="/">
-            <svg class="header__link-logo" viewBox="0 0 90 20">
-                <path
-                    d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z"
-                    fill="#FF0000" class="style-scope yt-icon"></path>
-            </svg>
-        </a>
+            <div class="header__center">
+                <div class="header__search">
+                    <div class="header__search-left">
+                        <input class="header__input" placeholder="Введите запрос" type="search">
+                        <button class="header__keybord"><i class="header__keybord-logo material-icons">keyboard</i></button>
+                    </div>
+                    <button class="header__search-button"><i class="header__search-ico material-icons">search</i></button>
+                </div>
+                <button class="header__voise"><svg class="header__voise-ico" viewBox="0 0 16 16" class="bi bi-mic"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd"
+                            d="M10 8V3a2 2 0 1 0-4 0v5a2 2 0 1 0 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                    </svg></button>
+            </div>
 
-        <div class="header__search">
-            <input aria-label="Search snippets and collections" class="header__search-input" placeholder="Search"
-                type="search">
-            <button class="header__search-button">ds</button>
-            <button class="header__search-voise">voise</button>
+            <div class="header__right">
+                <button class="header__addcontent"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                        focusable="false" class="header__icon">
+                        <g class="header__icon">
+                            <path d="M18,8.83V5H2v14h16v-5.83L22,15V7L18,8.83z M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z"
+                                class="header__icon"></path>
+                        </g>
+                    </svg></button>
+                <button class="header__cokcok"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                        focusable="false" class="header__icon">
+                        <g class="header__icon">
+                            <path
+                                d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"
+                                class="header__icon"></path>
+                        </g>
+                    </svg></button>
+                <button class="header__profile"><img class="header__profile-logo" src="./img/chanel-logo_1.jpg"
+                        alt=""></button>
+            </div>
         </div>
 
-        <div class="header__rightblock">
-            <button class="header__rightblock-addcontent">ds</button>
-            <button class="header__rightblock-cokcok">ds</button>
-            <button class="header__rightblock-profile">ds</button>
-        </div>
     </header>
 
+
     <main class="page__main main">
-        <div class="main__menu menu">
+        <nav class="main__menu menu">
+            
             <ul class="menu__list">
                 <li class="menu__item">
-                    <p class="menu__title">Главная</p>
+                    <a class="menu__link" href="/">
+                        <svg class="menu__logo" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                            focusable="false">
+                            <g class="menu__logo">
+                                <path d="M4,10V21h6V15h4v6h6V10L12,3Z" class="menu__logo"></path>
+                            </g>
+                        </svg>
+                        <p class="menu__title">Главная</p>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">
+                        <svg class="menu__logo" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                            focusable="false">
+                            <g viewBox="0 0 24 24" class="menu__logo">
+                                <path
+                                    d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33c-.77-.32-1.2-.5-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86l-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"
+                                    class="menu__logo"></path>
+                            </g>
+                        </svg>
+                        <p class="menu__title">Shorts</p>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">
+                        <svg class="menu__logo" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                            focusable="false">
+                            <g class="menu__logo">
+                                <path
+                                    d="M10,18v-6l5,3L10,18z M17,3H7v1h10V3z M20,6H4v1h16V6z M22,9H2v12h20V9z M3,10h18v10H3V10z"
+                                    class="menu__logo"></path>
+                            </g>
+                        </svg>
+                        <p class="menu__title">Подписки</p>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">
+                        <svg class="menu__logo" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                            focusable="false">
+                            <g class="menu__logo">
+                                <path
+                                    d="M11,7l6,3.5L11,14V7L11,7z M18,20H4V6H3v15h15V20z M21,18H6V3h15V18z M7,17h13V4H7V17z"
+                                    class="menu__logo"></path>
+                            </g>
+                        </svg>
+                        <p class="menu__title">Библеотека</p>
+                    </a>
                 </li>
             </ul>
-        </div>
+        </nav>
+        <div class="main__content">
 
-        <div class="main__center">
-            <div class="main__upper upper">
+            <nav class="main__upper upper">
+
                 <ul class="upper__list">
                     <li class="upper__item">
+                        <a class="upper__link" href="/" style="background-color: rgb(240, 241, 241); color: black;">
+                            <p class="upper__text">Все</p>
+                        </a>
+
+                    </li>
+                    <li class="upper__item">
                         <a class="upper__link" href="/">
-                            <p class="upper__text">Всё</p>
+                            <p class="upper__text">В эфире</p>
+                        </a>
+
+                    </li>
+                    <li class="upper__item">
+                        <a class="upper__link" href="/">
+                            <p class="upper__text">Музыка</p>
+                        </a>
+                    </li>
+                    <li class="upper__item">
+                        <a class="upper__link" href="/">
+                            <p class="upper__text">Музыка</p>
+                        </a>
+                    </li>
+                    <li class="upper__item">
+                        <a class="upper__link" href="/">
+                            <p class="upper__text">Музыка</p>
+                        </a>
+                    </li>
+                    <li class="upper__item">
+                        <a class="upper__link" href="/">
+                            <p class="upper__text">Музыка</p>
+                        </a>
+                    </li>
+                    <li class="upper__item">
+                        <a class="upper__link" href="/">
+                            <p class="upper__text">Музыка</p>
+                        </a>
+                    </li>
+                    <li class="upper__item">
+                        <a class="upper__link" href="/">
+                            <p class="upper__text">Музыка</p>
+                        </a>
+                    </li>
+                    <li class="upper__item">
+                        <a class="upper__link" href="/">
+                            <p class="upper__text">Музыка</p>
+                        </a>
+                    </li>
+                    <li class="upper__item">
+                        <a class="upper__link" href="/">
+                            <p class="upper__text">Музыка</p>
+                        </a>
+                    </li>
+                    <li class="upper__item">
+                        <a class="upper__link" href="/">
+                            <p class="upper__text">Музыка</p>
                         </a>
                     </li>
                 </ul>
-            </div>
-
-            <div class="main__card card">
+            </nav>
+            <nav class="main__card card">
                 <ul class="card__list">
                     <li class="card__item">
-                        <h2 class="card__title">123</h2>
-                        <p class="card__chanel">123</p>
-                        <p class="card__count-watch">123</p>
+                        <a href="/" class="card__link-video"><img class="card__img" src="./img/hq720.jpg" alt=" "></a>
+                        <nav class="card__intro">
+                            <a href="/" class="card__link-chanel"><img class="card__logo" src="./img/chanel-logo_1.jpg"
+                                    alt=""></a>
+                            <article class="card__lyric">
+                                <a href="/" class="card__link-video"><h2 class="card__title">Street Chill Weekend 🌇 Lofi hip hop beat to chill /
+                                    relax
+                                    to🍀90's
+                                    Lo-fi Chillout</h2></a>
+                                <nav><a href="/" class="card__chanel">90's Lo-fi Chillout</a></nav>
+                                <p class="card__count-watch">5 тыс. просмотра</p>
+                            </article>
+                        </nav>
+                    </li>
+                    <li class="card__item">
+                        <a href="/" class="card__link-video"><img class="card__img" src="./img/hq720.jpg" alt=" "></a>
+                        <nav class="card__intro">
+                            <a href="/" class="card__link-chanel"><img class="card__logo" src="./img/chanel-logo_1.jpg"
+                                    alt=""></a>
+                            <article class="card__lyric">
+                                <a href="/" class="card__link-video"><h2 class="card__title">Street Chill Weekend 🌇 Lofi hip hop beat to chill /
+                                    relax
+                                    to🍀90's
+                                    Lo-fi Chillout</h2></a>
+                                <nav><a href="/" class="card__chanel">90's Lo-fi Chillout</a></nav>
+                                <p class="card__count-watch">5 тыс. просмотра</p>
+                            </article>
+                        </nav>
+                    </li>
+                    <li class="card__item">
+                        <a href="/" class="card__link-video"><img class="card__img" src="./img/hq720.jpg" alt=" "></a>
+                        <nav class="card__intro">
+                            <a href="/" class="card__link-chanel"><img class="card__logo" src="./img/chanel-logo_1.jpg"
+                                    alt=""></a>
+                            <article class="card__lyric">
+                                <a href="/" class="card__link-video"><h2 class="card__title">Street Chill Weekend 🌇 Lofi hip hop beat to chill /
+                                    relax
+                                    to🍀90's
+                                    Lo-fi Chillout</h2></a>
+                                <nav><a href="/" class="card__chanel">90's Lo-fi Chillout</a></nav>
+                                <p class="card__count-watch">5 тыс. просмотра</p>
+                            </article>
+                        </nav>
+                    </li>
+                    <li class="card__item">
+                        <a href="/" class="card__link-video"><img class="card__img" src="./img/hq720.jpg" alt=" "></a>
+                        <nav class="card__intro">
+                            <a href="/" class="card__link-chanel"><img class="card__logo" src="./img/chanel-logo_1.jpg"
+                                    alt=""></a>
+                            <article class="card__lyric">
+                                <a href="/" class="card__link-video"><h2 class="card__title">Street Chill Weekend 🌇 Lofi hip hop beat to chill /
+                                    relax
+                                    to🍀90's
+                                    Lo-fi Chillout</h2></a>
+                                <nav><a href="/" class="card__chanel">90's Lo-fi Chillout</a></nav>
+                                <p class="card__count-watch">5 тыс. просмотра</p>
+                            </article>
+                        </nav>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </main>
 
+    </main>
 </body>

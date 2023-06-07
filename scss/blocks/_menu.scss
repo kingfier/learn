@@ -1,0 +1,52 @@
+.menu {
+    max-width: 72px;
+    padding: 0px 4px;
+    position: fixed;
+    left: 0;
+    box-sizing: border-box;
+    height: 100%;
+    @media(max-width: 768px) {
+        display: none;
+    }
+    .a:hover {
+        background-color: rgba(0, 0, 0, 0.233);
+        border-radius: 10px;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0px;
+        max-width: 72px;
+    }
+
+    &__item {
+        width: 72px;
+        padding: 16px 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 10px;
+        color: aliceblue;
+    }
+
+    &__logo {
+        height: 24px;
+        fill: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+
+
+
+}

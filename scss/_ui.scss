@@ -1,3 +1,25 @@
-body{
-    background-color: rgba(0, 0, 0, 0.925);
+body {
+    background-color: rgb(22, 21, 21);
+    color: antiquewhite;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: normal;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+    background: none;
+    /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 91, 91);
+    border-radius: 20px;
 }
