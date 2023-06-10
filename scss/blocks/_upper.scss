@@ -1,38 +1,36 @@
 .upper {
     position: fixed;
     max-height: 56px;
-    width: 85%;
-    margin: 0px 0px 0px 74px;
+    width: 100%;
     display: flex;
-    overflow: hidden;
     flex-wrap: nowrap;
-    background-color: rgb(22, 21, 21);
+    background-color: var(--color-background-general);
     z-index: 9999;
-    @media(max-width: 768px) {
-            margin: 0px 20px;
-            width: 90%;
-        }
-    
+    padding-left: 8px;
+    box-shadow: inset -86px 0em 2em -12px rgb(214, 214, 214);
+
     &::-webkit-scrollbar {
         height: 6px;
+
         @media(min-width: 360px) {
             display: none;
         }
     }
-    
+
     &::-webkit-scrollbar-track {
         background: none;
     }
-    
+
     &::-webkit-scrollbar-thumb {
         background-color: rgb(92, 91, 91);
         border-radius: 20px;
     }
+
     &:hover {
         overflow-x: scroll;
     }
 
-    
+
     &__list {
         display: flex;
         box-sizing: border-box;
@@ -44,14 +42,14 @@
     &__link {
         display: flex;
         text-decoration: none;
-        color: aliceblue;
-        background-color: rgba(119, 114, 114, 0.541);
+        color: var(--color-text-general);
+        background-color: var(--color-background-link);
         border-radius: 8px;
         margin: 16px 16px 16px 0px;
         padding: 5px 12px;
 
         &:not(:hover) {
-            background-color: rgba(119, 114, 114, 0.247);
+            background-color: var(--color-background-hover-link);
         }
     }
 

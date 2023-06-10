@@ -1,8 +1,6 @@
 .card {
     $this: &;
-    
-    
-
+    padding: 56px 10px 0px 10px;
     &__link-video {
         display: inline-block;
         overflow: hidden;
@@ -14,14 +12,9 @@
         list-style-type: none;
         margin: 0px;
         padding: 0px;
-        margin-left: 74px;
-        margin-top: 56px;
-        padding-top: 24px;
         gap: 10px;
         justify-content: center;
-        @media(max-width: 768px) {
-            margin-left: 0px;
-        }
+        
     }
 
     &__item {
@@ -34,7 +27,6 @@
                 }
             }
         }
-        //min-width: 300px;
         max-width: 360px;
     }
 
@@ -72,11 +64,11 @@
     &__chanel {
         margin: 0px;
         font-size: 14px;
-        color: rgba(240, 248, 255, 0.493);
+        color: var(--color-text-commit);
         text-decoration: none;
         transition: 0.2s;
         &:hover{
-            color: aliceblue;
+            color: var(--color-text-general);
             transition: 0.2s;
         }
     }
@@ -84,10 +76,10 @@
     &__count-watch {
         margin: 0px;
         font-size: 14px;
-        color: rgba(240, 248, 255, 0.493);
+        color: var(--color-text-commit);
     }
     &__link-video{
         text-decoration: none;
-        color: aliceblue;
+        color: var(--color-text-general);
     }
 }

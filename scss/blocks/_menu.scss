@@ -8,15 +8,13 @@
     @media(max-width: 768px) {
         display: none;
     }
-    .a:hover {
-        background-color: rgba(0, 0, 0, 0.233);
-        border-radius: 10px;
-    }
+    
 
     &__list {
         list-style-type: none;
         padding: 0px;
         max-width: 72px;
+        
     }
 
     &__item {
@@ -25,18 +23,21 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
+        &:hover {
+            background-color: var(--color-background-link);
+            border-radius: 10px;
+        }
     }
 
     &__title {
         text-align: center;
         font-size: 10px;
-        color: aliceblue;
+        color: var(--color-text-general);
     }
 
     &__logo {
         height: 24px;
-        fill: rgb(255, 255, 255);
+        fill: var(--color-fill-ico);
         align-items: center;
         justify-content: center;
 

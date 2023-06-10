@@ -11,12 +11,10 @@ body {
 
 body::-webkit-scrollbar {
     width: 8px;
-    /* ширина всей полосы прокрутки */
 }
 
 body::-webkit-scrollbar-track {
     background: none;
-    /* цвет зоны отслеживания */
 }
 
 body::-webkit-scrollbar-thumb {
