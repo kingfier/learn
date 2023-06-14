@@ -1,3 +1,4 @@
+//modal menu
 const CLASS_LIST = {
     MODAL: 'modal',
     MODAL_ACTIVE: 'modal--active',
@@ -47,20 +48,43 @@ const getScrollbarWidth = () => {
 
     return scrollBarWidth
 }
+//filter upper
+function app() {
+    const buttons = document.querySelectorAll('.button')
+    const cards = document.querySelectorAll('.card')
 
-const filterBox = document.querySelectorAll('.box');
-document.querySelector('nav').addEventListener('click', event => {
-    if (event.target.tagName !== 'LI') return false;
+    function filter (category, items) {
+        items.forEach((item) => {
+            const isItemFiltered = !item.classList.contains(category)
+            const isShowAll = category.toLowerCase() === 'all'
+            if (isItemFiltered && !isShowAll) {
+                item.classList.add('anime')
+            } else {
+                item.classList.remove('hide')
+                item.classList.remove('anime')
+            }
+        })
+    }
 
-    let filterClass = event.target.dataset['kind'];
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const currentCategory = button.dataset.filter
+            filter(currentCategory, cards)
+        })
+    })
 
-    filterBox.forEach(elem => {
-        elem.classList.remove('hide');
-        if (!elem.classList.contains(filterClass)) {
-            elem.classList.add('hide');
+    cards.forEach((card) => {
+        card.ontransitionend = function () {
+            if (card.classList.contains('anime')) {
+                card.classList.add('hide')
+            }
         }
-    });
-});
+    })
+}
+
+app()
+
+//scroll to #
 const icons = document.querySelectorAll('.js-modal-open');
 icons.forEach(icon => {
     icon.addEventListener('click', (event) => {

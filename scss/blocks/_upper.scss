@@ -48,7 +48,7 @@
     &__item {
         &:first-child {
             #{$this} {
-                &__link {
+                &__button {
                     background-color: #ffffff;
                     color: black;
                     margin-left: 8px;
@@ -58,7 +58,7 @@
 
         &:last-child {
             #{$this} {
-                &__link {
+                &__lbutton {
                     margin-right: 8px;
                 }
             }
@@ -67,7 +67,7 @@
 
     }
 
-    &__link {
+    &__button {
         display: block;
         text-decoration: none;
         color: var(--color-text-general);
@@ -75,7 +75,8 @@
         border-radius: 8px;
         padding: 4px 12px;
         margin-top: 16px;
-
+        border: 0;
+        cursor: pointer;
         &:not(:hover) {
             background-color: var(--color-background-hover-link);
         }

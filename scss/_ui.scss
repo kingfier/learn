@@ -11,6 +11,7 @@ body {
 
 body::-webkit-scrollbar {
     width: 8px;
+
     @media(max-width: 720px) {
         display: none;
     }
@@ -23,4 +24,31 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: rgb(92, 91, 91);
     border-radius: 20px;
+}
+
+.anime {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.hide {
+    animation-name: hide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+    0% {
+        visibility: visible;
+        height: 200px;
+    }
+
+    100% {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        max-width: 0;
+        font-size: 0;
+        margin: 0;
+    }
 }
