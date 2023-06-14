@@ -1,9 +1,12 @@
 .card {
     $this: &;
-    padding: 56px 10px 0px 10px;
+    padding-top: 56px;
+
     &__link-video {
-        display: inline-block;
         overflow: hidden;
+        display: block;
+        text-decoration: none;
+        color: var(--color-text-general);
     }
 
     &__list {
@@ -52,6 +55,7 @@
     }
 
     &__title {
+        padding-top: 4px;
         margin: 0px;
         white-space: 2;
         overflow: hidden;
@@ -61,7 +65,7 @@
         font-size: 16px;
     }
 
-    &__chanel {
+    &__link-chanel {
         margin: 0px;
         font-size: 14px;
         color: var(--color-text-commit);
@@ -79,7 +83,24 @@
         color: var(--color-text-commit);
     }
     &__link-video{
+        display: block;
         text-decoration: none;
         color: var(--color-text-general);
+    }
+}
+.hide{
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes a1{
+    to{
+        opacity: 0;
+        min-height: 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
     }
 }

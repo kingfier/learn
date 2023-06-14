@@ -11,6 +11,9 @@ body {
 
 body::-webkit-scrollbar {
     width: 8px;
+    @media(max-width: 720px) {
+        display: none;
+    }
 }
 
 body::-webkit-scrollbar-track {

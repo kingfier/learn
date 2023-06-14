@@ -1,18 +1,22 @@
 .upper {
     position: fixed;
-    max-height: 56px;
-    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    width: 90vw;
+    height: 56px;
     background-color: var(--color-background-general);
-    z-index: 9999;
-    padding-left: 8px;
-    box-shadow: inset -86px 0em 2em -12px rgb(214, 214, 214);
+    z-index: 8;
+    $this: &;
+    overflow: scroll;
+    overflow-y: hidden;
+
+    @media(max-width: 768px) {
+        width: 100%;
+    }
 
     &::-webkit-scrollbar {
         height: 6px;
 
-        @media(min-width: 360px) {
+        @media(max-width: 768px) {
             display: none;
         }
     }
@@ -26,27 +30,51 @@
         border-radius: 20px;
     }
 
-    &:hover {
-        overflow-x: scroll;
+    &:not(:hover) {
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
 
     &__list {
         display: flex;
-        box-sizing: border-box;
+        gap: 16px;
         list-style: none;
         margin: 0px;
         padding: 0px;
     }
 
+    &__item {
+        &:first-child {
+            #{$this} {
+                &__link {
+                    background-color: #ffffff;
+                    color: black;
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        &:last-child {
+            #{$this} {
+                &__link {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+
+    }
+
     &__link {
-        display: flex;
+        display: block;
         text-decoration: none;
         color: var(--color-text-general);
         background-color: var(--color-background-link);
         border-radius: 8px;
-        margin: 16px 16px 16px 0px;
-        padding: 5px 12px;
+        padding: 4px 12px;
+        margin-top: 16px;
 
         &:not(:hover) {
             background-color: var(--color-background-hover-link);
@@ -57,5 +85,6 @@
         margin: 0px;
         font-size: 14px;
         white-space: nowrap;
+
     }
 }

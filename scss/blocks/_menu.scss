@@ -1,28 +1,30 @@
 .menu {
     max-width: 72px;
-    padding: 0px 4px;
     position: fixed;
     left: 0;
     box-sizing: border-box;
     height: 100%;
+    z-index: 8;
+    
     @media(max-width: 768px) {
         display: none;
     }
-    
+
 
     &__list {
         list-style-type: none;
-        padding: 0px;
-        max-width: 72px;
+        padding: 0;
+        margin: 0;    
+        
         
     }
 
     &__item {
         width: 72px;
-        padding: 16px 0px;
         justify-content: center;
         align-items: center;
         text-align: center;
+        
         &:hover {
             background-color: var(--color-background-link);
             border-radius: 10px;
@@ -45,6 +47,8 @@
 
     &__link {
         text-decoration: none;
+        display: block;
+        padding: 8px 0;
     }
 
 

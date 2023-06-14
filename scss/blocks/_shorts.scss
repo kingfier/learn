@@ -1,0 +1,96 @@
+.shorts {
+    $this: &;
+    margin: 20px 0px;
+
+    &__box {
+        margin: 0px 20px;
+        background-color: var(--color-background-general);
+        border-bottom: 5px solid var(--color-conture-search);
+        border-top: 5px solid var(--color-conture-search);
+    }
+
+    &__card {
+        overflow: hidden;
+        display: block;
+        text-decoration: none;
+        color: var(--color-text-general);
+        height: 400px;
+        max-width: 180px;
+    }
+
+    &__header {
+        margin: 24px 0px 24px 8px;
+        display: flex;
+        max-height: 40px;
+        justify-content: space-between;
+
+    }
+
+    &__head-left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+
+    }
+
+    &__title-ico {
+        display: block;
+        width: 24px;
+    }
+
+    &__btn-close {
+        background: none;
+        border: 0;
+        color: #ffff;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        gap: 10px;
+        justify-content: center;
+
+    }
+
+    &__card-title {
+        white-space: 2;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+    }
+    &__card-watchers{
+        margin: 0px;
+        font-size: 14px;
+        color: var(--color-text-commit);
+    }
+    &__item {
+        &:hover {
+            #{$this} {
+                &__card-ico {
+                    transform: scale(1.05);
+                    border-radius: 0px;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+
+    &__card-ico {
+        overflow: hidden;
+        max-width: 170px;
+        border-radius: 10px;
+        transition: 1s;
+        object-fit: cover;
+        height: 300px;
+    }
+}
