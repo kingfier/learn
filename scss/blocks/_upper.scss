@@ -58,7 +58,7 @@
 
         &:last-child {
             #{$this} {
-                &__lbutton {
+                &__button {
                     margin-right: 8px;
                 }
             }
@@ -80,6 +80,18 @@
         &:not(:hover) {
             background-color: var(--color-background-hover-link);
         }
+        /*&:focus{
+            background-color: #fff;
+            color: #000;
+            .upper__item:first-child {
+                #{$this} {
+                    &__button {
+                        background-color: var(--color-background-link);
+                        //color: black;
+                    }
+                }
+            }
+        }*/
     }
 
     &__text {

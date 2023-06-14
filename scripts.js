@@ -50,10 +50,10 @@ const getScrollbarWidth = () => {
 }
 //filter upper
 function app() {
-    const buttons = document.querySelectorAll('.button')
+    const buttons = document.querySelectorAll('.btn')
     const cards = document.querySelectorAll('.card')
 
-    function filter (category, items) {
+    function filter(category, items) {
         items.forEach((item) => {
             const isItemFiltered = !item.classList.contains(category)
             const isShowAll = category.toLowerCase() === 'all'
@@ -70,6 +70,7 @@ function app() {
         button.addEventListener('click', () => {
             const currentCategory = button.dataset.filter
             filter(currentCategory, cards)
+            this.classList.toggle("activated");
         })
     })
 
@@ -82,8 +83,8 @@ function app() {
     })
 }
 
-app()
 
+app()
 //scroll to #
 const icons = document.querySelectorAll('.js-modal-open');
 icons.forEach(icon => {
@@ -104,3 +105,21 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+//search
+function search() {
+    let input = document.getElementById("inputSearch");
+    let filter = input.value.toUpperCase();
+    let ul = document.getElementById("list");
+    let li = ul.getElementsByTagName("li");
+
+
+    for (let i = 0; i < li.length; i++) {
+        let a = li[i].getElementsByTagName("h2")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+document.addEventListener('keyup', search);

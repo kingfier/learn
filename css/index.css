@@ -52,6 +52,10 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
   }
 }
+.activated {
+  background-color: #fff;
+}
+
 :root {
   --color-text-general: #ffffff;
   --color-text-commit: #f0f8ff7e;
@@ -319,7 +323,7 @@ body::-webkit-scrollbar-thumb {
   color: black;
   margin-left: 8px;
 }
-.upper__item:last-child .upper__lbutton {
+.upper__item:last-child .upper__button {
   margin-right: 8px;
 }
 .upper__button {
@@ -332,6 +336,18 @@ body::-webkit-scrollbar-thumb {
   margin-top: 16px;
   border: 0;
   cursor: pointer;
+  /*&:focus{
+      background-color: #fff;
+      color: #000;
+      .upper__item:first-child {
+          .upper {
+              &__button {
+                  background-color: var(--color-background-link);
+                  //color: black;
+              }
+          }
+      }
+  }*/
 }
 .upper__button:not(:hover) {
   background-color: var(--color-background-hover-link);

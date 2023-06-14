@@ -59,7 +59,7 @@
             <div class="header__center">
                 <div class="header__search">
                     <div class="header__search-left">
-                        <input class="header__input" placeholder="Введите запрос" type="search">
+                        <input class="header__input" id="inputSearch" placeholder="Введите запрос" type="Search..">
 
                     </div>
                     <button class="header__search-button">
@@ -141,72 +141,72 @@
         </nav>
         <div class="main__content">
 
-            <nav class="main__upper upper">
+            <nav class="main__upper upper" id="scroll">
 
-                <ul class="upper__list container" >
+                <ul class="upper__list" id="myBtnContainer">
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('all')" data-filter="all">
+                        <button class="btn upper__button" data-filter="all">
                             <p class="upper__text">Все</p>
                         </button>
 
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('streems')" data-filter="streems">
+                        <button class="btn upper__button" data-filter="live">
                             <p class="upper__text">В эфире</p>
                         </button>
 
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('musics')" data-filter="musics">
+                        <button class="btn upper__button" data-filter="musics">
                             <p class="upper__text">Музыка</p>
                         </button>
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('jems')" data-filter="jems">
+                        <button class="btn upper__button" data-filter="jems">
                             <p class="upper__text">Джемы</p>
                         </button>
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('games')" data-filter="games">
+                        <button class="btn upper__button" data-filter="games">
                             <p class="upper__text">Видеоигры</p>
                         </button>
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('multfilms')" data-filter="multfilms">
+                        <button class="btn upper__button" data-filter="multfilms">
                             <p class="upper__text">Мультфильмы</p>
                         </button>
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('news')" data-filter="news">
+                        <button class="btn upper__button" data-filter="news">
                             <p class="upper__text">Новинки</p>
                         </button>
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('musics')" data-filter="musics">
+                        <button class="btn upper__button" data-filter="musics">
                             <p class="upper__text">Музыка</p>
                         </button>
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('musics')" data-filter="musics">
+                        <button class="btn upper__button" data-filter="musics">
                             <p class="upper__text">Музыка</p>
                         </button>
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('musics')" data-filter="musics">
+                        <button class="btn upper__button" data-filter="musics">
                             <p class="upper__text">Музыка</p>
                         </button>
                     </li>
                     <li class="upper__item" id="BCon">
-                        <button class="upper__button button" onclick="filterSelection('musics')" data-filter="musics">
+                        <button class="btn upper__button" data-filter="musics">
                             <p class="upper__text">БОРОДА</p>
                         </button>
                     </li>
                 </ul>
             </nav>
             <nav class="main__card cards">
-                <ul class="cards__list">
+                <ul class="cards__list" id="list">
                     <li class="cards__item">
-                        <div class="card musics">
+                        <div class="card musics live">
                             <a href="/" class="cards__link-video"><img class="cards__img" src="./img/hq720.jpg"
                                     alt=" "></a>
                             <nav class="cards__intro">
@@ -246,7 +246,7 @@
                         </div>
                     </li>
                     <li class="cards__item">
-                        <div class="card  jems">
+                        <div class="card  jems news">
                             <a href="/" class="cards__link-video"><img class="cards__img" src="./img/h2.jpg" alt=" "></a>
                             <nav class="cards__intro">
                                 <a href="/" class="cards__link-chanel"><img class="cards__logo" src="./img/chanel-logo_1.jpg"
@@ -264,7 +264,7 @@
                         </div>
                     </li>
                     <li class="cards__item">
-                        <div class="card  games">
+                        <div class="card  games multfilms live">
                             <a href="/" class="cards__link-video"><img class="cards__img" src="./img/hq720_live.jpg"
                                     alt=" "></a>
                             <nav class="cards__intro">
@@ -310,12 +310,12 @@
                     <button class="shorts__btn-close">X</button>
                 </div>
                 <nav>
-                    <ul class="shorts__list">
+                    <ul class="shorts__list" id="list">
                         <li class="shorts__item">
                             <a href="/" class="shorts__card">
                                 <article>
                                     <img class='shorts__card-ico' src="./img/hq720.jpg">
-                                    <h3 class="shorts__card-title">123123123</h3>
+                                    <h2 class="shorts__card-title">123123123</h2>
                                     <p class="shorts__card-watchers"> 5 th watch</p>
                                 </article>
                             </a>
@@ -324,7 +324,7 @@
                             <a href="/" class="shorts__card">
                                 <article>
                                     <img class='shorts__card-ico' src="./img/hq70.jpg">
-                                    <h3 class="shorts__card-title">Редкая флешка от Apple</h3>
+                                    <h2 class="shorts__card-title">Редкая флешка от Apple</h2>
                                     <p class="shorts__card-watchers"> 807 тыс. просмотров</p>
                                 </article>
                             </a>
@@ -333,8 +333,8 @@
                             <a href="/" class="shorts__card">
                                 <article>
                                     <img class='shorts__card-ico' src="./img/oar2.jpg">
-                                    <h3 class="shorts__card-title">БАЛЕРИНА ИЗ ATOMIC HEART В ОБРАЗЕ БАЛЕРИНЫ ИЗ ATOMIC
-                                        HEART 🤔🤔🤔</h3>
+                                    <h2 class="shorts__card-title">БАЛЕРИНА ИЗ ATOMIC HEART В ОБРАЗЕ БАЛЕРИНЫ ИЗ ATOMIC
+                                        HEART 🤔🤔🤔</h2>
                                     <p class="shorts__card-watchers"> 5.7 млн просмотров</p>
                                 </article>
                             </a>
@@ -343,7 +343,7 @@
                             <a href="/" class="shorts__card">
                                 <article>
                                     <img class='shorts__card-ico' src="./img/oar3.jpg">
-                                    <h3 class="shorts__card-title">The new Nokia</h3>
+                                    <h2 class="shorts__card-title">The new Nokia</h2>
                                     <p class="shorts__card-watchers"> 5.8 млн просмотров</p>
                                 </article>
                             </a>
@@ -352,7 +352,7 @@
                             <a href="/" class="shorts__card">
                                 <article>
                                     <img class='shorts__card-ico' src="./img/hq720.jpg">
-                                    <h3 class="shorts__card-title">123123123</h3>
+                                    <h2 class="shorts__card-title">123123123</h2>
                                     <p class="shorts__card-watchers"> 5 th watch</p>
                                 </article>
                             </a>
@@ -362,7 +362,7 @@
 
                                 <img class='shorts__card-ico' src="./img/hq70.jpg">
                                 <article>
-                                    <h3 class="shorts__card-title">Редкая флешка от Apple</h3>
+                                    <h2 class="shorts__card-title">Редкая флешка от Apple</h2>
                                     <p class="shorts__card-watchers"> 807 тыс. просмотров</p>
                                 </article>
                             </a>
@@ -371,8 +371,8 @@
                             <a href="/" class="shorts__card">
                                 <article>
                                     <img class='shorts__card-ico' src="./img/oar2.jpg">
-                                    <h3 class="shorts__card-title">БАЛЕРИНА ИЗ ATOMIC HEART В ОБРАЗЕ БАЛЕРИНЫ ИЗ ATOMIC
-                                        HEART 🤔🤔🤔</h3>
+                                    <h2 class="shorts__card-title">БАЛЕРИНА ИЗ ATOMIC HEART В ОБРАЗЕ БАЛЕРИНЫ ИЗ ATOMIC
+                                        HEART 🤔🤔🤔</h2>
                                     <p class="shorts__card-watchers"> 5.7 млн просмотров</p>
                                 </article>
                             </a>
@@ -381,7 +381,7 @@
                             <a href="/" class="shorts__card">
                                 <article>
                                     <img class='shorts__card-ico' src="./img/oar3.jpg">
-                                    <h3 class="shorts__card-title">The new Nokia</h3>
+                                    <h2 class="shorts__card-title">The new Nokia</h2>
                                     <p class="shorts__card-watchers"> 5.8 млн просмотров</p>
                                 </article>
                             </a>
