@@ -80,7 +80,7 @@
         &:not(:hover) {
             background-color: var(--color-background-hover-link);
         }
-        /*&:focus{
+        &:focus{
             background-color: #fff;
             color: #000;
             .upper__item:first-child {
@@ -91,7 +91,7 @@
                     }
                 }
             }
-        }*/
+        }
     }
 
     &__text {
