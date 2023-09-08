@@ -88,3 +88,8 @@
         color: var(--color-text-general);
     }
 }
+.card{
+    &_hidden{
+        display: none;
+    }
+}

@@ -4,4 +4,8 @@
     @media(max-width: 768px) {
         padding-left: 0px;
     }
+    @media (min-width: 1280px) {
+        //transition: 0.5s;
+        padding-left: 240px;
+    }
 }

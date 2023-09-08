@@ -26,11 +26,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-.anime {
-    transform: scale(0);
-    opacity: 0;
-}
-
 .hide {
     animation-name: hide;
     animation-duration: 0.5s;
@@ -52,6 +47,15 @@ body::-webkit-scrollbar-thumb {
         margin: 0;
     }
 }
-.activated {
-    background-color: #fff;
+
+
+aside>a {
+    outline-offset: -1px;
+    outline: 1px solid transparent
+}
+
+aside>a:focus {
+    outline-color: #ff1492;
+    outline-color: hsl(var(--brandHSL));
+    transition: outline-color .25s ease
 }

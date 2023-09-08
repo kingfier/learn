@@ -49,8 +49,6 @@
         &:first-child {
             #{$this} {
                 &__button {
-                    background-color: #ffffff;
-                    color: black;
                     margin-left: 8px;
                 }
             }
@@ -71,33 +69,35 @@
         display: block;
         text-decoration: none;
         color: var(--color-text-general);
-        background-color: var(--color-background-link);
+
         border-radius: 8px;
         padding: 4px 12px;
         margin-top: 16px;
         border: 0;
         cursor: pointer;
-        &:not(:hover) {
-            background-color: var(--color-background-hover-link);
+
+        background-color: var(--color-background-hover-link);
+
+        &:hover {
+            background-color: var(--color-background-link);
         }
-        &:focus{
-            background-color: #fff;
-            color: #000;
-            .upper__item:first-child {
-                #{$this} {
-                    &__button {
-                        background-color: var(--color-background-link);
-                        //color: black;
-                    }
-                }
-            }
-        }
+
     }
 
     &__text {
         margin: 0px;
         font-size: 14px;
         white-space: nowrap;
+
+    }
+}
+
+.button-upper-active {
+    background-color: #fff;
+    color: #000;
+
+    &:hover {
+        background-color: #fff;
 
     }
 }
